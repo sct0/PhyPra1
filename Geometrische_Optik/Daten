@@ -1,0 +1,167 @@
+Daten für Versuch Geometrische Optik
+
+Versuch 1.1
+
+F = 15cm, b = 195cm, Position der Linse in (cm) 
+
+Person 1
+78.5
+78.4
+78.4
+78.4
+78.5
+
+Person 2
+78.4
+78.5
+78.3
+78.5
+78.5
+
+Versuch 1.2
+
+F = 15cm, Bild bei 195cm, Gegenstand bei 135cm,  Messwerte in (cm)
+
+Blauer Filter, Position 1, größer
+
+Person 1
+152.6
+153.0
+
+Person 2
+152.4
+152.3
+
+Blauer Filter, Position 2, kleiner
+
+Person 1
+170.7
+170.8
+
+Person 2 
+171.5
+171.0
+
+Roter Filter, Position 1, größer
+
+Person 1
+153.2
+153.0
+
+Person 2
+152.5
+152.7
+
+Roter Filter, Position 2, kleiner
+
+Person 1
+170.4
+170.5
+
+Person 2
+170.2
+170.5
+
+Lochblende, Position 1, größer
+
+Person 1
+153.1
+152.8
+
+Person 2
+152.6
+153.0
+
+Lochblende, Position 2, kleiner
+
+Person 1
+170.4
+170.5
+
+Person 2
+170.2
+170.5
+
+Ringblende, Position 1, größer
+
+Person 1
+153.1
+153.3
+
+Person 2
+152.7
+153.1
+
+Ringblende, Position 2, kleiner
+
+Person 1
+170.6
+170.5
+
+Person 2
+170.7
+171.0
+
+Versuch 1.3
+
+Marke bei 100cm
+
+Linsenstellung 1 (11.5cm Abstand zwischen den Linsen)
+
+gedreht:	Vergrößerung:	Pos. Gegenstand:
+n		1.8		85cm
+y		1.2		85cm
+n		0.9		80cm
+y		0.7		80cm
+n		2.1		86cm
+y		1.3		86cm
+n		1.5		84cm
+y		1.1		84cm
+n		1.3		83cm
+y		0.9		83cm
+n		2.3		86.5cm
+y		1.4		86.5cm
+
+Linsenstellung 2 (9.5cm Abstand zwischen den Linsen)
+
+gedreht:	Vergrößerung:	Pos. Gegenstand:
+n		1.7		85cm
+y		1.1		85cm
+n		0.7		80cm
+y		0.6		80cm
+n		2.0		86cm
+y		1.3		86cm
+n		1.4		84cm
+y		1.0		84cm
+n		1.2		83cm
+y		0.9		83cm
+n		2.3		86.5cm
+y		1.3		86.5cm
+
+Versuch 2.1 
+
+Fernrohr Keppler (f_1=500mm, f_2=70mm)
+durch Fernrohr sichtbarer Bereich:	31cm
+Okulardurchmesser:			31mm
+Abstand zwischen den Linsen:		57cm
+
+Fernrohr Galileo (f_1=500mm, f_2=-100mm)
+durch Fernrohr sichtbarer Bereich:	34.1cm
+Okulardurchmesser:			8mm
+Abstand zwischen den Linsen:		?
+
+Versuch 2.2
+
+Bild bei	167.5cm
+Linse bei	58.3cm
+Gegenstand bei	47.5cm
+
+durch Experiment bestimmte Vergrößerung: 10.5
+
+Versuch 2.3
+
+f_1 = 500mm
+f_2 = 70mm
+d = 65cm
+
+(d: Abstand zwischen den beiden Linsen)
