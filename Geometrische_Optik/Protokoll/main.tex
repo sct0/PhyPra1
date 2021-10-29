@@ -37,7 +37,7 @@
 \newcommand{\versuchsnr}{80}               % bitte die korrekte Nummer dem 
                                            % Arbeitsplatz am Versuchstag 
                                            % entnehmen
-\newcommand{\fehlerrechnung}{Nein}         % Ob Fehlerrechnung im Versuch 
+\newcommand{\fehlerrechnung}{Ja}         % Ob Fehlerrechnung im Versuch 
                                            % durchgeführt wurde oder nicht
 
 \newcommand{\betreuer}{Paul Giebler}      % Name des zuständigen Betreuers
@@ -112,10 +112,22 @@
     % Contents
     \MainMatter
     
-    \emptychapter[1]{Messprotokoll 1}{} % usage: \emptychapter[page displayed 
+    \emptychapter[1]{}{} % usage: \emptychapter[page displayed 
                                         %        in toc]{name of the chapter}
-    \pseudochapter[3]{Messprotokoll 2}  % usage: \pseudochapter[number of pages 
+ 
+    
+    \pseudochapter[3]{}  % usage: \pseudochapter[number of pages 
                                         %        added]{name of the chapter}
+                                        
+    \chapter{Einführung}
+    \input{./chap/Einführung.tex}
+    
+    \chapter{Brennweitenbestimmung (Versuchsteil 1)}
+    \input{./chap/Brennweitenbestimmung.tex}
+    
+    \chapter{Aufbau optischer Instrumente (Versuchsteil 2)}
+    \input{./chap/Aufbau_optischer_Instrumente.tex}
+
     
     \chapter{Auswertung}
     \input{./chap/chapter1.tex} %\cleardoublepage
