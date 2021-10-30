@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   sodipodi:docname="Reflexionsgesetz.svg"
+   inkscape:export-filename="/home/arne/Documents/Reflexionsgesetz.png"
+   inkscape:export-xdpi="200"
+   inkscape:export-ydpi="200">
+  <defs
+     id="defs2">
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#Strips1_4"
+       id="pattern2302"
+       patternTransform="matrix(0.25780105,-0.18055767,-11.872339,-16.951378,0,0)" />
+    <pattern
+       inkscape:stockid="Stripes 1:4"
+       id="Strips1_4"
+       patternTransform="translate(0,0) scale(10,10)"
+       height="1"
+       width="5"
+       patternUnits="userSpaceOnUse"
+       inkscape:collect="always">
+      <rect
+         id="rect1606"
+         height="2"
+         width="1"
+         y="-0.5"
+         x="0"
+         style="fill:black;stroke:none" />
+    </pattern>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker4881"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path4879"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Lstart"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path4553"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#030000;fill-opacity:1"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(1.1) translate(1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lend"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path4538"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#aa0000;fill-opacity:1"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.7084524"
+     inkscape:cx="287.39461"
+     inkscape:cy="839.37545"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1055"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid4919" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 2">
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke-width:0.26458332;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect2327"
+       width="174.84512"
+       height="95.088493"
+       x="16.725664"
+       y="13.59292"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+  </g>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker4881)"
+       d="M 57.452382,39.03125 97.895833,72.104167"
+       id="path3713"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:#030000;fill-opacity:1;stroke:#000000;stroke-width:0.30000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow2Lstart);image-rendering:auto"
+       d="M 138.33929,39.03125 97.895833,72.104167"
+       id="path3713-3"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.29352882;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:0.88058647,0.29352882;stroke-dashoffset:0"
+       d="M 97.895833,29.770833 V 72.104166"
+       id="path4921"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 39.313457,72.170984 H 163.66762"
+       id="path5049"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <image
+       y="60.197918"
+       x="91.28125"
+       id="image843"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAXCAYAAAARIY8tAAAABHNCSVQICAgIfAhkiAAAAQNJREFU SIntkuFxgkAUhL84KcAOpARSQSiBEs4KQgfagXYQrCCkA1NB7CBagVgB/njLhAx3B074kcy4v3i3 73Yf9xbuuOPP48FzlgAvQArUQAXspjLcStQBcyBT/dbpyXV+M0qgwSbvotC5U33w9AzCSaT0cJm4 Cnu+faBnFeAAOEokD/CNLlf0n2cLrKXhNUgl0ITcxZ1jE4rr8TNsmQAfkctgiXMDPT3MsKXF0A7w hT3DzQY18A4sOmItnAY48Z2cHFv2aINW6AR8YmnYSDiRcKG+V33X4//hJxIsJVmEC2FPPAS/htfg cQLhBNvfQvUzcEHhmcogBZaqn7AdDaXzn+AKSac4RX1eoAMAAAAASUVORK5CYII= "
+       style="image-rendering:optimizeSpeed"
+       preserveAspectRatio="none"
+       height="3.9687481"
+       width="4.2393546"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <image
+       y="60.197918"
+       x="100.54166"
+       id="image854"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAXCAYAAAARIY8tAAAABHNCSVQICAgIfAhkiAAAAQ1JREFU SIntlN1xgzAQhL/MuACV4BIogRIogQ6cDpIO4g6MKzAl0EHowHQQd6A83GpGCAFjmwc/eGf0gO60 u/czwBtvvDw+Mnd74AAUwA1ogfNWgkeR1oADSn1fopxK93ejATzmPMan7mt995mcVdQiaTKxUrEW a1+XxAvFOqzaH6z6EQaRVDMGvAhapu3pJRzEPNbqkQOvMwcP/M24TyvvUq4ycrgkcIucxmgYV9Wk Am5FIMR/FwzEGMjMsgWuTIdT68EQuarIVwLwjc1kMmSHVXAFvrBN6PXAidQDJ+VNCLA2Zclj7JVY LsRyCKsayOe28SEUJGuJVbIJHNZWn5wuJOw2EMj9CIcneV8I/8UGSUarQ8/2AAAAAElFTkSuQmCC  "
+       style="image-rendering:optimizeSpeed"
+       preserveAspectRatio="none"
+       height="3.9687481"
+       width="3.9687603"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 83.343749,60.197917 c 0,0 13.229166,-11.90625 29.104171,0"
+       id="path859"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:url(#pattern2302);fill-opacity:1;stroke-width:0.26458332;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect861"
+       width="124.35416"
+       height="10.583333"
+       x="39.6875"
+       y="72.104164"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+  </g>
+</svg>
