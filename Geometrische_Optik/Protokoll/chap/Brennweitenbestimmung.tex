@@ -37,4 +37,38 @@ In diesem Versuchsteil soll die Brennweite einer Linse nur mit Hilfe eines Maßs
 SKIZZE
 
 \section{Brennweitenbestimmung einer Linse mit dem Besselverfahren}
+
+Zur genaueren Bestimmung der Brennweite einer dünnen Linse ist das Besselsche Verfahren gut geeignet. Dazu werden Bild (in unserem Fall ein Dia), Schirm und Linse wie auf der Skizze gezeigt angeordnet. Hierbei macht man sich zu Nutze, dass es bei einem festen Abstand zwischen Bild und Schirm zwei mögliche Linsenstellungen gibt, bei denen ein scharfes Bild auf den Schirm geworfen wird. Dies soll im folgenden durch die Herleitung gezeigt werden. Durch einsetzen der Relationen in Gleichung \ref{Relation} in die Linsengleichung \ref{Linsengleichung}, die leicht geometrisch einzusehen ist, erhält man, die Gleichung \ref{Gleichung}, diese Gleichung wird für $g$ gelöst, wobei die Differenz von $g_1$ und $g_2$ als e definiert wird \ref{Defe}, nach einer weiteren trivialen Umformung erhält man eine Gleichung für $f$ \ref{Gleichungf}.\\
+Aus Gleichung \ref{Defe} ist direkt offentsichtlich, dass für eine reelles Ergebnis $a^2 \geq 4af$ gelten muss. Außerdem ist aus der gleichen Gleichung auch ersichtlich, dass es nicht vorteilhaft ist $\frac{e}{f}$ zu groß zu wählen, da im Grenzfall $e = a$ gilt und somit die Linse im Bild/Schirm stehen müsste. \\
+Abgesehen von der eigentlichen Brennweitenbestimmung werden in diesem Versuchsteil auch zwei Linsenfehler genauer betrachtet: die chromatische und die sphärische Abberation. Dazu werden bei der Brennweitenmessung für die chromatische Rot- und Blaufilter und für die sphärische Abberation Ring- und Lochblende verwendet.\\
+Bei der chromatischen Abberation handelt es sich um die Eigenschaft von Linsen aufgrund von Dispersion, also der Abhängigkeit der Brechzahl von der Wellenlänge, beispielsweise blaues Licht stärker zu brechen als rotes. Um diese zu messen werden Farbfilter verwendet und somit die Brennweite von blauem und rotem Licht unabhängig zu messen und somit die chromatische Abberation zu bestimmen.\\
+Die sphärische Abberation ist ein Linsenfehler bei dem, im Normalfall, achsennahes Licht weniger stark gebrochen wird, als achsenfernes Licht, somit fällt die Brennweite für achsenahes Licht größer aus, als für achsenfernes Licht. Um diesen Linsenfehler qualitativ zu beschreiben werden Loch- und Ringblende vor der Linse fixiert und somit für achsennahes und achsenfernes Licht separat die Brennweiten gemessen.\\
+
+\begin{equation} \label{Linsengleichung}
+    \frac{1}{f} = \frac{1}{b} + \frac{1}{g}
+\end{equation}
+
+\begin{align} \label{Relation}
+    b &= a - g   \\
+    \nonumber b &= \frac{a-e}{2} 
+\end{align}
+
+\begin{equation} \label{Gleichung}
+    \frac{1}{f} = \frac{a}{ag-g^2}
+\end{equation}
+
+\begin{equation} \label{Defe}
+    e = \Delta g = \sqrt{a^2-4af}
+\end{equation}
+
+\begin{equation} \label{Gleichungf}
+    f = \frac{a^2-e^2}{4a}
+\end{equation}
+
+
+\subsection{Fehlerrechnung zur Brennweitenbestimmung einer Linse mit dem Besselverfahren}
+
+
 \section{Brennweitenbestimmung eines Zweilinsensystems mit dem Abbéschen Verfahren}
+
+\subsection{Fehlerrechnung zur Brennweitenbestimmung eines Zweilinsensystems mit dem Abbéschen Verfahren}
