@@ -48,6 +48,7 @@ Aus Gleichung \ref{Defe} ist direkt offentsichtlich, dass für eine reelles Erge
 Abgesehen von der eigentlichen Brennweitenbestimmung werden in diesem Versuchsteil auch zwei Linsenfehler genauer betrachtet: die chromatische und die sphärische Abberation. Dazu werden bei der Brennweitenmessung für die chromatische Rot- und Blaufilter und für die sphärische Abberation Ring- und Lochblende verwendet.\\
 Bei der chromatischen Abberation handelt es sich um die Eigenschaft von Linsen aufgrund von Dispersion, also der Abhängigkeit der Brechzahl von der Wellenlänge, beispielsweise blaues Licht stärker zu brechen als rotes. Um diese zu messen werden Farbfilter verwendet und somit die Brennweite von blauem und rotem Licht unabhängig zu messen und somit die chromatische Abberation zu bestimmen \ref{fig:Chromatische Abberation}.\\
 Die sphärische Abberation ist ein Linsenfehler bei dem, im Normalfall, achsennahes Licht weniger stark gebrochen wird, als achsenfernes Licht, somit fällt die Brennweite für achsenahes Licht größer aus, als für achsenfernes Licht. Um diesen Linsenfehler qualitativ zu beschreiben werden Loch- und Ringblende vor der Linse fixiert und somit für achsennahes und achsenfernes Licht separat die Brennweiten gemessen \ref{fig:Sphärische Abberation}.\\
+Es wird jeweils einmal für den Blaufilter, Rotfilter, Ringblende und Lochblende ein Set mit je 4 unabhängigen Messungen für die beiden möglichen Kofirugationen (kleineres und größeres scharfes Bild) erstellt, wobei die ersten zwei Messungen von Person 1 und die anderen zwei von Person 2 durchgeführt wurden um personenabhängige Fehler einzugrenzen. Von jedem der insgesamt 8 Sets wird der Mittelwert ermittelt und daraus die entsprechende Brennweite errechnet.
 
 \begin{equation} \label{Linsengleichung}
     \frac{1}{f} = \frac{1}{b} + \frac{1}{g}
@@ -92,6 +93,37 @@ Die sphärische Abberation ist ein Linsenfehler bei dem, im Normalfall, achsenna
 \end{figure}
 
 \subsection{Fehlerrechnung zur Brennweitenbestimmung einer Linse mit dem Besselverfahren}
+Der Fehler wird aus der Ungenauigkeit des Maßstabs, die als $0.5mm$ (halbe Skala) abgeschätzt wird und aus dem ungenauen Winkel der Halterungen abgeschätzt, wobei für letzteres ein Winkel von einem halben Grad als sinnvolle Ungenauigkeit erachtet wird und die Linsen ungefähr auf einer Höhe von $150mm$ angebracht sind. Somit ergibt sich eine gesamt Ungenauigkeit von $0.5mm + \sin{0.5} = 1.5mm$
+Für den Fehler auf die Mittelwerte gilt allgemein: $\sigma = \sigma_x / \sqrt{N}$ wobei $\sigma$ der resultierende Fehler ist, $\sigma_x$ der Fehler auf die Einzelmessung und $N$ die Anzahl der Messungen, wir erhalten folglich einen Fehler von $0.75mm$.
+Mit der gaußschen Fehlerfortpflanzung erhalten wir für den Abstand zwischen den möglichen Linsenstellungen $e$ und für die Brennweite $f$:
+
+\begin{equation}
+    \sigma_f = \sqrt{\sum_{j=1}^m(\frac{\partial f}{\partial x_j})^2 \cdot \sigma_{x_j}^2} 
+    =\sqrt{(\frac{\partial f}{\partial a})^2 \cdot \sigma_{a}^2 + (\frac{\partial f}{\partial a})^2 \cdot \sigma_{a}^2} 
+    =\sqrt{\frac{1}{4}(1+(\frac{e}{a})^2)^2 \cdot \sigma_a + (\frac{-e}{2a})^2 \cdot \sigma_e}
+\end{equation}
+
+\begin{equation}
+    \sigma_e
+    =\sqrt{(\frac{\partial e}{\partial g_1})^2 \cdot \sigma_{g_1}^2 + (\frac{\partial e}{\partial g_2})^2 \cdot \sigma_{g_2}^2} 
+    =\sqrt{(\sigma_{g_1})^2 + (\sigma_{g_2})^2}
+\end{equation}
+
+Damit ergibt sich:
+\begin{tabular}{|c|c|c|c|c|}
+	\hline
+	& Blaufilter & Rotfilter & Lochblende & Ringblende \\
+	\hline
+	Mittelwert von e (cm) & 18.42 & 17.54 & 17.52 & 17.65 \\
+	\hline
+	Fehler auf e (cm) & 0.106 & 0.106 & 0.106 & 0.106 \\
+	\hline
+	Mittelwert von f (cm) & 13.58 & 13.71 & 13.72 & 13.70 \\
+	\hline
+	Fehler auf f (cm) & 0.043 & 0.043 & 0.043 & 0.043 \\
+	\hline
+\end{tabular}
+
 
 
 \section{Brennweitenbestimmung eines Zweilinsensystems mit dem Abbéschen Verfahren}
