@@ -5,8 +5,8 @@
 \newcommand{\yone}{15}
 \newcommand{\ytwo}{-253}
 
-\newcommand{\hoehea}{60}
-\newcommand{\hoeheb}{60}
+\newcommand{\hoehea}{55}
+\newcommand{\hoeheb}{55}
 
 
 
@@ -38,111 +38,112 @@
     \begin{textblock}{10}[0,0](4.2,3.1)
         \begin{tikzpicture}[overlay]
         \draw[color=gray]
-            (\xone mm + 5 mm, -12 mm)
-         -- (\xtwo mm + \diameter pt - 5 mm, -12 mm);
+            (\xone mm + 5 mm, -8 mm)
+         -- (\xtwo mm + \diameter pt - 5 mm, -8 mm);
         \end{tikzpicture}
     \end{textblock}
     
     \Large
     % Zeile 1
-    \begin{textblock}{12}[0,0](3.58,4.4)
+    \begin{textblock}{12}[0,0](3.58,4)
         \mytextfield{Prak.}{\praktikum}{0.9cm}{17pt}
                     {P1/P2}{2}{Praktikum}
     \end{textblock}
-    \begin{textblock}{12}[0,0](5.53,4.4)
+    \begin{textblock}{12}[0,0](5.53,4)
         \mytextfield{Semester}{\semester}{2.6cm}{17pt}
         {z.B. \glqq WS14/15\grqq\ oder \glqq SS15\grqq}{0}{Semester}
     \end{textblock}
-    \begin{textblock}{12}[0,0](9.53,4.4)
+    \begin{textblock}{12}[0,0](9.53,4)
         \mytextfield{Wochentag}{\wochentag}{1.3cm}{17pt}
                     {Mo/Di/Mi/Do}{2}{Wochentag}
     \end{textblock}
-    \begin{textblock}{12}[0,0](12.88,4.4)
+    \begin{textblock}{12}[0,0](12.88,4)
        \mytextfield{Gruppennr.}{\gruppennr}{1.06cm}{17pt}
                    {\#\#}{2}{Gruppennummer}
     \end{textblock}
     
     % Zeile 2
-    \begin{textblock}{12}[0,0](3.58,4.95)
+    \begin{textblock}{12}[0,0](3.58,4.55)
         \mytextfield{Name}{\nachnamea}{6cm}{17pt}
                     {}{0}{Name1}
     \end{textblock}
-    \begin{textblock}{12}[0,0](9.53,4.95)
+    \begin{textblock}{12}[0,0](9.53,4.55)
         \mytextfield{Vorname}{\vornamea}{6cm}{17pt}
                     {}{0}{Vorname1}
     \end{textblock}
     
     % Zeile 3
-    \begin{textblock}{12}[0,0](3.58,5.5)
+    \begin{textblock}{12}[0,0](3.58,5.1)
         \mytextfield{Name}{\nachnameb}{6cm}{17pt}
                     {}{0}{Name2}
     \end{textblock}
-    \begin{textblock}{12}[0,0](9.53,5.5)
+    \begin{textblock}{12}[0,0](9.53,5.1)
         \mytextfield{Vorname}{\vornameb}{6cm}{17pt}
                     {}{0}{Vorname2}
     \end{textblock}
     
     % Zeile 4
-    \begin{textblock}{12}[0,0](3.64,6.05)
+    \begin{textblock}{12}[0,0](3.64,5.65)
        \normalsize\mytextfield{Emailadresse(n)}{\emailadressen}{13.1cm}{10pt}
                               {Optional}{0}{Emailadressen}
     \end{textblock}
     
     % Zeile 5
-    \begin{textblock}{12}[0,0](3.58,7)
+    \begin{textblock}{12}[0,0](3.58,6.2)
         \mytextfield{Versuch}{\versuch\ (\praktikum-\versuchsnr)}{9.45cm}{14pt}
                     {z.B. \glqq Galvanometer (P1-13)\grqq\ oder \glqq %
                      Mikrowellenoptik (P2-15)\grqq}{0}{Versuch}
     \end{textblock}
-    \begin{textblock}{12}[0,0](12.58,7)
+    \begin{textblock}{12}[0,0](12.58,6.2)
        \mytextfield{Fehlerrech.}{\fehlerrechnung}{1.46cm}{17pt}
                    {Ja/Nein}{4}{Fehlerrechnung}
     \end{textblock}
     
     % Zeile 6
-    \begin{textblock}{12}[0,0](3.58,7.55)
+    \begin{textblock}{12}[0,0](3.58,6.75)
         \mytextfield{Betreuer}{\betreuer}{7cm}{17pt}{}{0}{Betreuer}
     \end{textblock}
-    \begin{textblock}{12}[0,0](10.82,7.55)
+    \begin{textblock}{12}[0,0](10.82,6.75)
         \mytextfield{Durchgeführt am}{\durchgefuehrt}{2.53cm}{17pt}
                     {TT.MM.JJ}{8}{Durchfuehrung}
     \end{textblock}
     
     % Querstrich
-    \begin{textblock}{20}[0,0](0,7.9)\tiny\centering
+    \begin{textblock}{20}[0,0](0,7.1)\tiny\centering
         Wird vom Betreuer ausgefüllt.
     \end{textblock}
     \begin{tikzpicture}[overlay]
     \draw[color=gray]
-        (\xone mm + 5 mm, -95 mm)
-     -- (\xtwo mm + \diameter pt - 5 mm, -95 mm);
+        (\xone mm + 5 mm, -78 mm)
+     -- (\xtwo mm + \diameter pt - 5 mm, -78 mm);
     \end{tikzpicture}
     
     % Zeile 1
-    \begin{textblock}{12}[0,0](3.65,8.57)
+    \begin{textblock}{12}[0,0](3.58,8)
         \myTtextfield{1. Abgabe am}{}{2.5cm}{17pt}
+                     {}
+    \end{textblock}
+    \begin{textblock}{20}[0,0](8.3,8)
+        \myTtextfield{Rückgabe am}{}{2.5cm}{17pt}
                      {}
     \end{textblock}
     
     % Block 1
     \begin{tikzpicture}[overlay]
     \draw[color=gray]  
-        (\xone mm + 10 mm, -107.5 mm)
-     -- (\xtwo mm + \diameter pt - 10 mm, -107.5 mm)
-     -- (\xtwo mm + \diameter pt - 10 mm, -107.5 mm - \hoehea mm)
-     -- (\xone mm + 10 mm, -107.5 mm - \hoehea mm)
-     -- (\xone mm + 10 mm, -107.5 mm);
+        (\xone mm + 10 mm, -85.5 mm)
+     -- (\xtwo mm + \diameter pt - 10 mm, -85.5 mm)
+     -- (\xtwo mm + \diameter pt - 10 mm, -85.5 mm - \hoehea mm)
+     -- (\xone mm + 10 mm, -85.5 mm - \hoehea mm)
+     -- (\xone mm + 10 mm, -85.5 mm);
     \end{tikzpicture}
-    \begin{textblock}{20}[0,0](3.8,9.2)
-        \myTtextfield{Rückgabe am}{}{2.5cm}{17pt}
-                     {}
-    \end{textblock}
-    \begin{textblock}{20}[0,0](8.7,9.2)
-        \smash{Begründung:}
+    
+    \begin{textblock}{20}[0,0](4,8.57)
+        Begründung:
     \end{textblock}
     
     % Zeile 2
-    \begin{textblock}{12}[0,0](3.65,12.6)
+    \begin{textblock}{12}[0,0](3.58,11.85)
         \myTtextfield{2. Abgabe am}{}{2.5cm}{17pt}
                      {}
     \end{textblock}
@@ -150,28 +151,28 @@
     % Block 2
     \begin{tikzpicture}[overlay]
     \draw[color=gray]  
-        (\xone mm + 10 mm, -180 mm)
-     -- (\xtwo mm + \diameter pt - 10 mm, -180 mm)
-     -- (\xtwo mm + \diameter pt - 10 mm, -180 mm - \hoehea mm)
-     -- (\xone mm + 10 mm, -180 mm - \hoehea mm)
-     -- (\xone mm + 10 mm, -180 mm);
+        (\xone mm + 10 mm, -167 mm)
+     -- (\xtwo mm + \diameter pt - 10 mm, -167 mm)
+     -- (\xtwo mm + \diameter pt - 10 mm, -167 mm - \hoehea mm)
+     -- (\xone mm + 10 mm, -167 mm - \hoehea mm)
+     -- (\xone mm + 10 mm, -167 mm);
     \end{tikzpicture}
-    \begin{textblock}{12}[0,0](4,13.25)
-        \smash{Ergebnis:~~~~+~~~/~~~0~~~/~~~-}
+    \begin{textblock}{12}[0,0](4.25,12.24)
+        {Ergebnis:~~~~+~~~/~~~0~~~/~~~-}
     \end{textblock}
-    \begin{textblock}{12}[0,0](9.5,13.25)
-        \smash{Fehlerrechnung:~~~Ja~~~/~~~Nein}
+    \begin{textblock}{12}[0,0](9.1,12.24)
+        {Fehlerrechnung:~~~Ja~~~/~~~Nein}
     \end{textblock}
-    \begin{textblock}{12}[0,0](3.8,13.72)
+    \begin{textblock}{12}[0,0](4.05,12.9)
         \myTtextfield{Datum}{}{2.5cm}{17pt}
                      {}
     \end{textblock}
-    \begin{textblock}{12}[0,0](8.3,13.72)
+    \begin{textblock}{12}[0,0](8.9,12.9)
         \myTtextfield{Handzeichen}{}{5.5cm}{17pt}
                      {}
     \end{textblock}
-    \begin{textblock}{12}[0,0](4,14.25)\Large
-        \smash{Bemerkungen:}
+    \begin{textblock}{12}[0,0](4,13.4)\Large
+        {Bemerkungen:}
     \end{textblock}
     
     
