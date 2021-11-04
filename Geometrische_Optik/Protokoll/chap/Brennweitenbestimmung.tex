@@ -159,4 +159,115 @@ Abgesehen davon kann man an den Mittelwerten, in Verbindung mit den Fehlern für
     \label{fig:Abbeverfahren}
 \end{figure}
 
+Während mit dem Besselverfahren die Brennweite einer einzelnen Linse bestimmt wird, lassen sich mit dem Abbeverfahren die Brennweiten und Hauptebenen eines Linsensystems bestimmen.
+Für diesen Versuch wurde ein Linsensystem aus zwei Linsen in einem Rohr verwendet, die sich innerhalb des Rohres unhabhänging voneinander verschieben lassen.
+Das Rohr wird an einem festen Punkt K auf der optischen Bank befestigt.
+
+Für das Linsensystem ergibt sich mit dem Abbildungsmaßstab y = B/G = b/g
+
+\begin{equation} \label{Linsensystem}
+    g = f(1 + \frac{1}{y}),/ b = f(1+y)
+\end{equation}
+
+Wobei g und b jeweils die Abstände zwischen Gegenstand bzw. Bild und dessen zugeordneten Hauptebene sind und B und G die Bild- und Gegenstandsgröße repräsentieren.
+Da die Lage der Hauptebenen bei einem Linsensystem nicht ohne weiteres bekannt ist, können g und b nicht direkt durch Messung bestimmt werden und müssen in der Gleichung
+durch messbare Werte ersetzt werden.
+Dies geschieht wie folgt:
+
+Man ordnet zunächst dem Gegenstand die Hauptebene $h_1$ der vorderen Linse zu, sodass sich für den Abstand zwischen Gegenstand und K ergibt
+
+\begin{equation} \label{x1}
+    x = g + h_1
+\end{equation}
+
+Nun setzt man hier \ref{Linsensystem} ein:
+
+\begin{equation} \label{x2}
+    x = f(1 + \frac{1}{y}) + h
+\end{equation}
+
+und eleminiert durch Umstellen und Einsetzen $h_1$, um eine Gleichung für $f_1$ zu erhalten.
+
+\begin{equation} \label{1}
+    h_1 = x_2 - f(1 + \frac{1}{y_2})
+\end{equation}
+
+\begin{equation} \label{3}
+    f_1 = \frac{x_1 - h}{(1 + \frac{1}{y_1})}
+\end{equation}
+
+\begin{equation} \label{4}
+    f_1 = \frac{x_2 - x_1}{(\frac{1}{y_2} + \frac{1}{y_1})}
+\end{equation}
+
+Wenn man nun mit zwei Messwertpaaren $(x_1, y_1), (x_2, y_2)$ f errechnet, kann man dieses in \ref{1} verwenden um $h_1$ zu erhalten.
+
+Um die 2. Hauptebene $H_2$ zu bestimmen, wird das Rohr auf dem Punkt um 180° gedreht und analog vorgegangen:
+
+\begin{equation} \label{4}
+    f_2 = \frac{x_2' - x_1'}{(\frac{1}{y_2'} + \frac{1}{y_1'})}
+\end{equation}
+
+Entsprechend der Mathematik wurde der Abstand zwischen Gegenstand und Linsensystem durch versetzen des Gegenstandes verändert und das Bild danach durch re-positionieren des Schirms scharfgestellt.
+Um die resultierende Größenänderung des Bildes sinnvoll messen zu können, wurde als Gegenstand ein Dia mit einem 1cm Strich verwendet, und auf dem Schirm Millimeterpapier angebracht.
+
+Im Versuch wurden zwei Messreihen für jeweils unterschiedliche Linsenabstände aufgenommen und Abwechselnd für die Ausgangs- und die um 180° gedrehte Position des Systems gemessen.
+
+\begin{table}[h!]
+    \begin{center}
+        \caption{Daten: Abbe-Verfahren für Zweilinsensystem bei 11.5cm Linsenabstand$S_1$}
+        \begin{tabular}{ccc}
+            \hline
+            Rotation   &  Vergrößerung  $X$ in $\SI{}{cm}$    & Abstand$V$ \\
+            \hline
+            \multirow{6}{*}{\SI{0}{\degree}}    & $\SI{1.8}{}$ & $\SI{15}{}$ \\
+                                                & $\SI{0.9}{}$ & $\SI{20}{}$ \\
+                                                & $\SI{2.1}{}$ & $\SI{14}{}$ \\
+                                                & $\SI{1.5}{}$ & $\SI{16}{}$ \\
+                                                & $\SI{1.3}{}$ & $\SI{17}{}$ \\
+                                                & $\SI{2.3}{}$ & $\SI{13.5}{}$ \\
+            \hline
+            \multirow{6}{*}{\SI{180}{\degree}}  & $\SI{1.2}{}$ & $\SI{15}{}$ \\
+                                                & $\SI{0.7}{}$ & $\SI{20}{}$ \\
+                                                & $\SI{1.3}{}$ & $\SI{14}{}$ \\
+                                                & $\SI{1.1}{}$ & $\SI{16}{}$ \\
+                                                & $\SI{0.9}{}$ & $\SI{17}{}$ \\
+                                                & $\SI{1.4}{}$ & $\SI{13.5}{}$ \\
+            \hline
+            \label{tab:Abbe1}
+        \end{tabular}
+    \end{center}
+\end{table}
+
+\begin{table}[h!]
+    \begin{center}
+        \caption{Daten: Abbe-Verfahren für Zweilinsensystem bei 9.5cm Linsenabstand$S_1$}
+        \begin{tabular}{ccc}
+            \hline
+            Rotation   &  Vergrößerung  $X$ in $\SI{}{cm}$    & Abstand$V$ \\
+            \hline
+            \multirow{6}{*}{\SI{0}{\degree}}    & $\SI{1.7}{}$ & $\SI{85}{}$ \\
+                                                & $\SI{0.7}{}$ & $\SI{80}{}$ \\
+                                                & $\SI{2.0}{}$ & $\SI{86}{}$ \\
+                                                & $\SI{1.4}{}$ & $\SI{84}{}$ \\
+                                                & $\SI{1.2}{}$ & $\SI{83}{}$ \\
+                                                & $\SI{2.3}{}$ & $\SI{86.5}{}$ \\
+            \hline
+            \multirow{6}{*}{\SI{180}{\degree}}  & $\SI{1.1}{}$ & $\SI{85}{}$ \\
+                                                & $\SI{0.6}{}$ & $\SI{80}{}$ \\
+                                                & $\SI{1.3}{}$ & $\SI{86}{}$ \\
+                                                & $\SI{1.0}{}$ & $\SI{84}{}$ \\
+                                                & $\SI{0.9}{}$ & $\SI{83}{}$ \\
+                                                & $\SI{1.3}{}$ & $\SI{86.5}{}$ \\
+            \hline
+            \label{tab:Abbe2}
+        \end{tabular}
+    \end{center}
+\end{table}
+
+\clearpage
+
 \subsection{Fehlerrechnung zur Brennweitenbestimmung eines Zweilinsensystems mit dem Abbéschen Verfahren}
+
+Zur Berechnung der Werte $f_1,\ h_1,\ f_2\ und\ h_2$ werden die Messwerte der beiden Messreihen unter Regression geplottet.
+Zur Approximation wurde die lineare Funktion $f(x) = m \cdot x + c$ verwendet, wobei 
