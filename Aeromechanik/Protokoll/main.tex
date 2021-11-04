@@ -111,14 +111,21 @@
     % Contents
     \MainMatter
     
-    \emptychapter[1]{Messprotokoll 1}{} % usage: \emptychapter[page displayed 
-                                        %        in toc]{name of the chapter}
-    \pseudochapter[3]{Messprotokoll 2}  % usage: \pseudochapter[number of pages 
-                                        %        added]{name of the chapter}
+    \chapter{Einführung}
+    \input{./chap/Einführung.tex}
     
-    \chapter{Auswertung}
-    \input{./chap/chapter1.tex} %\cleardoublepage
+    \chapter{Demonstrationsversuche}
+    \input{./chap/Demonstrationsversuche.tex}
+    
+    \chapter{Vorversuch}
+    \input{./chap/Vorversuch.tex}
 
+    \chapter{Unströmung von Körpern}
+    \input{./chap/Umstroemung_von_Koerpern.tex}
+    
+    \chapter{Strömung am Flügel}
+    \input{./chap/Stroemung_am_Fluegel.tex}
+    
     % appendix for more or less interesting calculations
     \Appendix
     \chapter*{\appendixname} \addcontentsline{toc}{chapter}{\appendixname}
