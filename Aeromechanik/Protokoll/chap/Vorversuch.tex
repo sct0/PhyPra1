@@ -11,19 +11,31 @@ Für den Versuch werden drei verschiedene Abstände vom Gebläseende gewählt, b
 Wie man an den im Plot aufgetragenen Werten für die verschiedene Abstände zum Gebläse erkennen kann, ist die Luftgeschwindigkeit desto konstanter umso kleiner die Entfernung zum Ende des Gebläses ist und auch umso kleiner der Abstand zur Mittelpunktachse ist.
 Deshalb wird für die kommenden Messungen ein Abstand von \SI{10}{\centi\metre} festgelegt und möglichst zentral vor dem Gebläse gemessen.
 
-\begin{figure}
+\begin{figure}[h]
     \centering
-    \includegraphics{Aeromechanik/Protokoll/fig/Aeromechanik Versuch 1.1.png}
+    \includegraphics[scale=0.8]{Aeromechanik/Protokoll/fig/Aeromechanik Versuch 1.1.png}
     \caption{Windgeschwindigkeiten für drei verschiedene Abstände vom Gebläse}
     \label{fig:Aeromechanik Versuch 1.1}
 \end{figure}
 
 \section{Messung der Windgeschwindigkeit}
+
+In diesem vorbereitenden Versuch geht es darum, die Abhängigkeit zwischen der Drehzahl des Gebläses und der Windgeschwindigkeit zu bestimmen. Um dies für die folgenden Versuche zu nutzen und somit Werte in Abhängigkeit von der Windgeschwindigkeit auszurechnen.
+
 \subsection{Messaufbau}
 
-\begin{figure}
+Um den Versuch zu realisieren, wird der dynamische Druck mithilfe einer kombinierten Sonde gemessen. Wobei hierbei die Differenz zwischen statischem- und Gesamtdruck gemessen wird (vergleiche Demonstrationsversuche). Um nun aus den errechneten Wertepaaren aus dynamischen Druck und Drehzahl Werte für die Windgeschwindigkeit in Abhängigkeit von der Drehzahl aufzustellen, wird die Formel für den dynamischen Druck zu Rate gezogen: 
+
+\begin{equation}
+    p_{dyn} = \frac{1}{2} \cdot u^2
+    \Rightarrow u = \sqrt{\frac{2p_{dyn}}{\rho}}
+\end{equation}
+
+Wobei die positive Wurzel gewählt wird um ein positives Ergebnis für die Geschwindigkeit zu erhalten, außerdem wird für die Dichte, die Dichte von Luft eingesetzt: $\rho = \SI{1.2}{\kg\per\cubic\m}$.
+
+\begin{figure}[h]
     \centering
-    \includegraphics{Aeromechanik/Protokoll/fig/Aeromechanik Versuch 1.2.png}
+    \includegraphics[scale=0.8]{Aeromechanik/Protokoll/fig/Aeromechanik Versuch 1.2.png}
     \caption{Windgeschwindigkeiten für verschiedene Drehzahlen}
     \label{fig:Aeromechanik Versuch 1.2}
 \end{figure}
