@@ -313,7 +313,7 @@ Die erste Regression gibt die Werte für die Gesamtbrennweiten des Systems und d
             Linsenabstand   & Rotation   & Steigung m   & Y-Achsen Abschnitt $c$ in $\SI{}{cm}$\\
             \hline
             
-            \multirow{2}{*}{$11,5cm$} & \SI{0}{\degree}   & $\SI{9,0(8)}{}$   & $\SI{0,9(14)}{}$ \\
+            \multirow{2}{*}{$11,5cm$} & \SI{0}{\degree}   & $\SI{9,1(8)}{}$   & $\SI{0,9(14)}{}$ \\
                                     & \SI{180}{\degree} & $\SI{8,7(6)}{}$   & $\SI{-1,0(13)}{}$ \\
             \hline
             \multirow{2}{*}{$9,5cm$}  & \SI{0}{\degree}   & $\SI{6,2(4)}{}$ & $\SI{5,1(8)}{}$ \\
@@ -332,11 +332,11 @@ Die erste Regression gibt die Werte für die Gesamtbrennweiten des Systems und d
             Linsenabstand           & Rotation          & f in $\SI{}{cm}$  & $\frac{1}{}$ in $\SI{}{\frac{1}{cm}}$ & Abstand $h_i$ in $\SI{}{cm}$\\
             \hline
             
-            \multirow{2}{*}{$11,5cm$}   & \SI{0}{\degree}   & $\SI{9,0}{}$      & \multirow{2}{*}{\SI{0,15}{}}  & $h_1: \SI{0,9}{}$ \\
-                                        & \SI{180}{\degree} & $\SI{8,7}{}$      &                               & $h_2: \SI{1,0}{}$ \\
+            \multirow{2}{*}{$11,5cm$}   & \SI{0}{\degree}   & $\SI{9,1}{}$      & {\SI{0,11}{}}  & $h_1: \SI{0,9}{}$ \\
+                                        & \SI{180}{\degree} & $\SI{8,7}{}$      & {\SI{0,12}{}}  & $h_2: \SI{1,0}{}$ \\
             \hline
-            \multirow{2}{*}{$9,5cm$}    & \SI{0}{\degree}   & $\SI{6,2}{}$      & \multirow{2}{*}{\SI{0,09}{}}  & $h_1: \SI{5,1}{}$ \\
-                                        & \SI{180}{\degree} & $\SI{6,8}{}$      &                               & $h_2: \SI{2,0}{}$ \\
+            \multirow{2}{*}{$9,5cm$}    & \SI{0}{\degree}   & $\SI{6,2}{}$      & {\SI{0,16}{}}  & $h_1: \SI{5,1}{}$ \\
+                                        & \SI{180}{\degree} & $\SI{6,9}{}$      & {\SI{0,15}{}} & $h_2: \SI{2,0}{}$ \\
             \hline
             \label{tab:abbe-Regression-Werte}
         \end{tabular}
@@ -355,7 +355,7 @@ ausgedrückt und $\frac{1}{f}$ in Abhängigkeit von $(h_1 + h_2)$ aufgetragen.
 
 \begin{figure}[h!]{}
     \begin{center}
-        \includegraphics[scale=0.4]{./fig/Abbe_h1h2_Plot.pdf}
+        \includegraphics{./fig/Abbe_h1h2_Plot.pdf}
         \caption{Regression der Messwerte für den Linsenabstand 9,5cm}
         \label{fig:Abbe-Regress-h1h2}
     \end{center}
@@ -366,7 +366,7 @@ ausgedrückt und $\frac{1}{f}$ in Abhängigkeit von $(h_1 + h_2)$ aufgetragen.
         \caption{Ergebnisse der Regressionen}
         \begin{tabular}{cccc}
             \hline
-            Parameter & Steigung $a$ in $\SI{}{cm^{-1}}$   & Y-Achsen Abschnitt $b$ in $\SI{}{cm^{-1}}$\\
+            Parameter & Steigung $m$ in $\SI{}{cm^{-1}}$   & Y-Achsen Abschnitt $b$ in $\SI{}{cm^{-1}}$\\
             \hline
                      & $\SI{0,04(2)}{}$   & $\SI{-0,05(8)}{}$ \\
             \hline
