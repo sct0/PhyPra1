@@ -174,39 +174,35 @@ Da die Lage der Hauptebenen bei einem Linsensystem nicht ohne weiteres bekannt i
 durch messbare Werte ersetzt werden.
 Dies geschieht wie folgt:
 
-Man ordnet zunächst dem Gegenstand die Hauptebene $h_1$ der vorderen Linse zu, sodass sich für den Abstand zwischen Gegenstand und K ergibt
+Man ordnet zunächst dem Gegenstand die Hauptebene $H_1$ der vorderen Linse zu, sodass sich für den Abstand zwischen Gegenstand und K ergibt
 
 \begin{equation} \label{x1}
-    x_1 = g + h_1
+    x = g + h_1
 \end{equation}
 
 Nun setzt man hier \ref{Linsensystem} ein:
 
 \begin{equation} \label{x2}
-    x_1 = f(1 + \frac{1}{\gamma}) + h_1
+    x = f_1(1 + \frac{1}{\gamma}) + h_1
 \end{equation}
 
-und eleminiert durch Umstellen und Einsetzen $h_1$, um eine Gleichung für $f_1$ zu erhalten.
+Um den Zusammenhang für die 2. Hauptebene $H_2$ aufzustellen, wird das Rohr auf der Markierung K um 180° gedreht und analog vorgegangen:
 
-\begin{equation} \label{1}
-    h_1 = x_2 - f(1 + \frac{1}{\gamma_2})
+\begin{equation} \label{x2}
+    x = g + h_2
 \end{equation}
 
-\begin{equation} \label{3}
-    f_1 = \frac{x_1 - h}{(1 + \frac{1}{\gamma_1})}
+\begin{equation} \label{x2}
+    x = f_2(1 + \frac{1}{\gamma}) + h_2
 \end{equation}
 
-\begin{equation} \label{4}
-    f_1 = \frac{x_2 - x_1}{(\frac{1}{\gamma_2} + \frac{1}{\gamma_1})}
+Die Gesamtbrennweite f des Systems setzt sich aus den Brennweiten $f_1$ und $f_2$ zusammen:
+
+\begin{equation}
+    \frac{1}{f} = \frac{1}{f_1} + \frac{1}{f_2} - \frac{h_1 + h_2}{f_1 \cdot f_2}
 \end{equation}
 
-Wenn man nun mit zwei Messwertpaaren $(x_1, \gamma_1), (x_2, \gamma_2)$ f errechnet, kann man dieses in \ref{1} verwenden um $h_1$ zu erhalten.
-
-Um die 2. Hauptebene $H_2$ zu bestimmen, wird das Rohr auf dem Punkt um 180° gedreht und analog vorgegangen:
-
-\begin{equation} \label{4}
-    f_2 = \frac{x_2' - x_1'}{(\frac{1}{\gamma_2'} + \frac{1}{\gamma_1'})}
-\end{equation}
+Über diese Zusammenhängen lassen sich später mittels Regression die Brennweiten und Hauptebenen des Linsensystems ermitteln.
 
 Entsprechend der Mathematik wurde der Abstand zwischen Gegenstand und Linsensystem durch versetzen des Gegenstandes verändert und das Bild danach durch re-positionieren des Schirms scharfgestellt.
 Um die resultierende Größenänderung des Bildes sinnvoll messen zu können, wurde als Gegenstand ein Dia mit einem 1cm Strich verwendet, und auf dem Schirm Millimeterpapier angebracht.
@@ -272,7 +268,7 @@ Im Versuch wurden zwei Messreihen für jeweils unterschiedliche Linsenabstände 
 Zur Berechnung der Werte $f_1,\ h_1,\ f_2\ und\ h_2$ werden zwei lineare Regressionen angewandt.
 Zur Approximation wurde jeweils die lineare Funktion $f(x) = m \cdot x + c$ verwendet.\\
 
-1. Regression:
+Die erste Regression gibt die Werte für die Gesamtbrennweiten des Systems und die Positionen der Hauptebenen:
 
 \begin{equation} \label{x}
     x = (1 + \frac{1}{\gamma})
@@ -306,6 +302,8 @@ Zur Approximation wurde jeweils die lineare Funktion $f(x) = m \cdot x + c$ verw
     \end{center}
 \end{figure}
 
+
+\clearpage
 
 \begin{table}[h!]
     \begin{center}
@@ -341,6 +339,38 @@ Zur Approximation wurde jeweils die lineare Funktion $f(x) = m \cdot x + c$ verw
                                         & \SI{180}{\degree} & $\SI{6,8}{}$      &                               & $h_2: \SI{2,0}{}$ \\
             \hline
             \label{tab:abbe-Regression-Werte}
+        \end{tabular}
+    \end{center}
+\end{table}
+
+\clearpage
+
+Bei der zweiten Regression wird die Steigung durch
+
+\begin{equation}
+    m = - \frac{1}{f_1 \cdot f_2} = \frac{f_1 \cdot f_2}{f_1 + f_2 - (h_1 + h_2)}
+\end{equation}
+
+ausgedrückt und $\frac{1}{f}$ in Abhängigkeit von $(h_1 + h_2)$ aufgetragen.
+
+\begin{figure}[h!]{}
+    \begin{center}
+        \includegraphics[scale=0.4]{./fig/Abbe_h1h2_Plot.pdf}
+        \caption{Regression der Messwerte für den Linsenabstand 9,5cm}
+        \label{fig:Abbe-Regress-h1h2}
+    \end{center}
+\end{figure}
+
+\begin{table}[h!]
+    \begin{center}
+        \caption{Ergebnisse der Regressionen}
+        \begin{tabular}{cccc}
+            \hline
+            Parameter & Steigung $a$ in $\SI{}{cm^{-1}}$   & Y-Achsen Abschnitt $b$ in $\SI{}{cm^{-1}}$\\
+            \hline
+                     & $\SI{0,04(2)}{}$   & $\SI{-0,05(8)}{}$ \\
+            \hline
+            \label{tab:abbe-Regression-results}
         \end{tabular}
     \end{center}
 \end{table}
