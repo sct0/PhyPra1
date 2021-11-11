@@ -161,12 +161,12 @@ Abgesehen davon kann man an den Mittelwerten, in Verbindung mit den Fehlern für
 
 Während mit dem Besselverfahren die Brennweite einer einzelnen Linse bestimmt wird, lassen sich mit dem Abbeverfahren die Brennweiten und Hauptebenen eines Linsensystems bestimmen.
 Für diesen Versuch wurde ein Linsensystem aus zwei Linsen in einem Rohr verwendet, die sich innerhalb des Rohres unhabhänging voneinander verschieben lassen.
-Das Rohr wird an einem festen Punkt K auf der optischen Bank befestigt.
+Das Rohr wird an einer festen Markierung K auf der optischen Bank befestigt.
 
 Für das Linsensystem ergibt sich mit dem Abbildungsmßaßstab $\gamma = B/G = b/g$
 
 \begin{equation} \label{Linsensystem}
-    g = f(1 + \frac{1}{\gamma}),\ b = f(1+\gamma)
+    g = f_1(1 + \frac{1}{\gamma}),\ b = f_1(1+\gamma)
 \end{equation}
 
 Wobei g und b jeweils die Abstände zwischen Gegenstand bzw. Bild und dessen zugeordneten Hauptebene sind und B und G die Bild- und Gegenstandsgröße repräsentieren.
@@ -204,7 +204,7 @@ Die Gesamtbrennweite f des Systems setzt sich aus den Brennweiten $f_1$ und $f_2
 
 Über diese Zusammenhängen lassen sich später mittels Regression die Brennweiten und Hauptebenen des Linsensystems ermitteln.
 
-Entsprechend der Mathematik wurde der Abstand zwischen Gegenstand und Linsensystem durch versetzen des Gegenstandes verändert und das Bild danach durch re-positionieren des Schirms scharfgestellt.
+Entsprechend der Mathematik wurde der Abstand zwischen Gegenstand und Markierung K durch versetzen des Gegenstandes verändert und das Bild danach durch re-positionieren des Schirms scharfgestellt.
 Um die resultierende Größenänderung des Bildes sinnvoll messen zu können, wurde als Gegenstand ein Dia mit einem 1cm Strich verwendet, und auf dem Schirm Millimeterpapier angebracht.
 
 Im Versuch wurden zwei Messreihen für jeweils unterschiedliche Linsenabstände aufgenommen und Abwechselnd für die Ausgangs- und die um 180° gedrehte Position des Systems gemessen.
@@ -275,7 +275,7 @@ Die erste Regression gibt die Werte für die Gesamtbrennweiten des Systems und d
 \end{equation}
 
 \begin{equation} \label{h}
-    f(x) = Abstand zwischen Gegenstand und Markikierung K
+    f(x) = Abstand\ zwischen\ Gegenstand\ und\ Markierung\ K
 \end{equation}
 
 \begin{equation} \label{h}
@@ -336,7 +336,7 @@ Die erste Regression gibt die Werte für die Gesamtbrennweiten des Systems und d
                                         & \SI{180}{\degree} & $\SI{8,7}{}$      & {\SI{0,12}{}}  & $h_2: \SI{1,0}{}$ \\
             \hline
             \multirow{2}{*}{$9,5cm$}    & \SI{0}{\degree}   & $\SI{6,2}{}$      & {\SI{0,16}{}}  & $h_1: \SI{5,1}{}$ \\
-                                        & \SI{180}{\degree} & $\SI{6,9}{}$      & {\SI{0,15}{}} & $h_2: \SI{2,0}{}$ \\
+                                        & \SI{180}{\degree} & $\SI{6,9}{}$      & {\SI{0,15}{}}  & $h_2: \SI{2,0}{}$ \\
             \hline
             \label{tab:abbe-Regression-Werte}
         \end{tabular}
@@ -345,18 +345,25 @@ Die erste Regression gibt die Werte für die Gesamtbrennweiten des Systems und d
 
 \clearpage
 
-Bei der zweiten Regression wird die Steigung durch
+Aus der Regression ergibt sich das:
 
 \begin{equation}
     m = - \frac{1}{f_1 \cdot f_2} = \frac{f_1 \cdot f_2}{f_1 + f_2 - (h_1 + h_2)}
 \end{equation}
 
-ausgedrückt und $\frac{1}{f}$ in Abhängigkeit von $(h_1 + h_2)$ aufgetragen.
+Aus dieser Gleichung lassen sich nun Gleichungen für $f_1$ und $f_2$ aufstellen:
+
+\begin{align}
+f_1 &= - \frac{c}{2 \cdot m} \pm \sqrt{\frac{c^2}{4 \cdot m^2} + \frac{1}{m}} \\
+f_2 &= - \frac{1}{m \cdot f_1}
+\end{align}
+
+Zur Bestimmung von m und c wird nun die zweite Regression ausgeführt, wobei nun $\frac{1}{f}$ in Abhängigkeit von $(h_1 + h_2)$ aufgetragen wird:
 
 \begin{figure}[h!]{}
     \begin{center}
-        \includegraphics{./fig/Abbe_h1h2_Plot.pdf}
-        \caption{Regression der Messwerte für den Linsenabstand 9,5cm}
+        \includegraphics[scale=0.4]{./fig/Abbe_h1h2_Plot.pdf}
+        \caption{Regression für $\frac{1}{f}$ in Abh. von $(h_1 + h_2)$}
         \label{fig:Abbe-Regress-h1h2}
     \end{center}
 \end{figure}
@@ -366,11 +373,25 @@ ausgedrückt und $\frac{1}{f}$ in Abhängigkeit von $(h_1 + h_2)$ aufgetragen.
         \caption{Ergebnisse der Regressionen}
         \begin{tabular}{cccc}
             \hline
-            Parameter & Steigung $m$ in $\SI{}{cm^{-1}}$   & Y-Achsen Abschnitt $b$ in $\SI{}{cm^{-1}}$\\
+            Parameter & Steigung $m$ in $\SI{}{cm^{-1}}$   & Y-Achsen Abschnitt $c$ in $\SI{}{cm^{-1}}$\\
             \hline
-                     & $\SI{0,04(2)}{}$   & $\SI{-0,05(8)}{}$ \\
+                     & $\SI{0,01(1)}{}$   & $\SI{0,10(2)}{}$ \\
             \hline
             \label{tab:abbe-Regression-results}
         \end{tabular}
     \end{center}
 \end{table}
+
+Es ergeben sich je zwei Werte pro Brennweite, über die im Anschluss noch einmal gemittelt werden kann, in diesem Fall ergibt sich aber Aufgrund der symmetrischen Natur der Werte kein Mehrwert daraus.
+
+
+\begin{align}
+    f_{11} &= \SI{6,18}{cm} \\
+    f_{12} &= \SI{-16,18}{cm} \\
+    f_{21} &= \SI{-16,18}{cm} \\
+    f_{22} &= \SI{6,18}{cm} \\
+\end{align}
+
+Die Messwerte lassen darauf schließen, dass das Linsensystem aus einer Konvexlinse mit einer Brennweite von 5,605cm und einer Konkavlinse mit einer Brennweite von -16,18cm besteht.
+Rückblickend wurden bei der Messung unvorteilhaft kleine Abstände zwischen Gegenstand und Linsensystem gewählt, was dazu führt dass Messfehler auf dem Abstand stärker ins Gewicht fallen.
+Es liegt daher nahe, dass die errechneten Werte nicht den Tatsächlichen Brennweiten der Linsen entsprechen.
