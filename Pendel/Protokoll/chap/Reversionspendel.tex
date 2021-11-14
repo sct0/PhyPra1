@@ -26,7 +26,13 @@ Das Trägheitsmoment eines Zylinders mit einer homogenen Masseverteilung ist geg
     T = 2 \pi \sqrt{\frac{I}{mgs}} = 2 \pi \sqrt{\frac{\frac{1}{3} l^2}{mg\frac{l}{2}}} = 2 \pi \sqrt{\frac{2l}{3g}}
 \end{equation}
 
-Durch einen Vergleich mit der Periodendauer eines mathematische Pendels: $$T_m = 2 \pi \sqrt{\frac{l_r}{g}}$$ lässt sich erkennen, dass die reduzierte Pendellänge $l_r = \frac{2}{3}l$ beträgt.
+Durch einen Vergleich mit der Periodendauer eines mathematische Pendels:
+
+\begin{equation} \label{Periodendauer mathematisches Pendel}
+   T_m = 2 \pi \sqrt{\frac{l_r}{g}} 
+\end{equation} 
+
+lässt sich erkennen, dass die reduzierte Pendellänge $l_r = \frac{2}{3}l$ beträgt.
 
 Weiter soll vorbereitend gezeigt werden, dass eine zusätzlich angebrauchte Masse bei $l_r$  keine Veränderung der Periodendauer hervorruft. Also gilt für $I^\prime = m^\prime (\frac{2}{3}l)^2$ und für $s^\prime = \frac{2}{3}l$
 
@@ -38,3 +44,41 @@ Mit dieser Erkenntnis lässt sich argumentieren, dass die Klauen, an denen das P
 
 \section{Bestimmung der Fallbeschleunigung g mit Hilfe des Reversionspendels}
 
+Aus Gleichung \ref{Periodendauer mathematisches Pendel} erhält man durch umformen eine Formel für die Fallbeschleunigung: 
+
+\begin{equation} \label{Fallbeschleunigung mathematisches Pendel}
+    g = l_r \frac{4 \pi^2}{T^2}
+\end{equation}
+
+wobei in diesem Versuchsteil $l_r$ experimentell bestimmt werden soll, um somit die Fallbeschleunigung experimentell zu bestimmen. Dabei ist die Periodendauer gleich um beiden Schneiden, wenn $d = l_r$ gilt, wobei $d$ der Abstand der beiden Schneiden ist. Für die Bestimmung von $l_r$ wird eine Messreihe für verschiedene Abstände $d$ der beiden Schneiden (Abb. \ref{fig:Pendel Versuch 1.1}), wie man an dem Plot erkennen kann, folgt die Periodendauer für die Aufhängung an der festen Schneide einer Geraden, während dies für die bewegliche Schneide nicht der Fall ist, deshalb werden für die lineare Regression nur Datenpunkte in der Nähe vom Schnittpunkt gewählt, wo der Verlauf näherungsweise linear ist. Die reduzierte Länge erhält man nun, indem man den Schnittpunkt der beiden angepassten Gerade berechnet:
+
+\begin{align} 
+    \nonumber y_{fest} &=  1.4383s + 0.252 \cdot \frac{s}{m} x\\
+    \nonumber y_{beweglich} &= 2.2040s -0.953 \cdot \frac{s}{m} x
+\end{align}
+
+Gleichsetzen und auflösen nach x liefert nun:
+
+    $$x=l_r \approx 0.6354m $$
+    Einsetzen liefert nun für die Periodendauer:
+    $$T = y_{fest}(l_r) = y_{beweglich}(l_r) = 1.598 s$$
+
+Damit erhalten wir nach einsetzen in die Gleichung \ref{Fallbeschleunigung mathematisches Pendel}:
+
+$$ g = l_r \frac{4 \pi}{T^2} \approx 9.823 $$
+
+Der Literaturwert für die Fallbeschleunigung beträgt $g=9.81 \frac{m}{s^2}$, unsere Abweichung beträgt demnach nur ungefähr $0.1 \% $
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.8]{Pendel/Protokoll/fig/Pendel Versuch 1.2.pdf}
+    \caption{Daten Versuch 1.2}
+    \label{fig:Pendel Versuch 1.1}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.8]{Pendel/Protokoll/fig/Pendel Versuch 1.2 Fit.pdf}
+    \caption{Fit Versuch 1.2}
+    \label{fig:Pendel Versuch 1.1 Fit}
+\end{figure}
