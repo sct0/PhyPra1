@@ -30,7 +30,7 @@
 \newcommand{\nachnameb}{Schwartz}           % Nachname des zweiten Praktikanten
 \newcommand{\vornameb}{Arne}              % Vorname des zweiten Praktikanten
 
-\newcommand{\emailadressen}{latexvorlage@fachschaft.physik.kit.edu}
+\newcommand{\emailadressen}{uhreq@student.kit.edu, ukjfu@student.kit.edu}
 % optionale Angabe von Emailadresse(n) für den Kontakt mit dem Betreuer
 
 \newcommand{\versuch}{Pendel} % Name des Versuchs
@@ -111,26 +111,28 @@
     % Contents
     \MainMatter
     
-    \emptychapter[1]{Messprotokoll 1}{} % usage: \emptychapter[page displayed 
+    %\emptychapter[1]{Messprotokoll 1}{} % usage: \emptychapter[page displayed 
                                         %        in toc]{name of the chapter}
-    \pseudochapter[3]{Messprotokoll 2}  % usage: \pseudochapter[number of pages 
+    %\pseudochapter[3]{Messprotokoll 2}  % usage: \pseudochapter[number of pages 
                                         %        added]{name of the chapter}
     
-    \chapter{Auswertung}
-    \input{./chap/chapter1.tex} %\cleardoublepage
+    \chapter{Reversionspendel}
+    \input{./chap/Reversionspendel.tex}
+    
+    %\chapter{Auswertung}
+    %\input{./chap/chapter1.tex} %\cleardoublepage
 
     % appendix for more or less interesting calculations
-    \Appendix
-    \chapter*{\appendixname} \addcontentsline{toc}{chapter}{\appendixname}
+    %\Appendix
+    %\chapter*{\appendixname} \addcontentsline{toc}{chapter}{\appendixname}
     % to make the appendix appear in ToC without number. \appendixname = 
     % Appendix or Anhang (depending on chosen language)
-    \input{./chap/appendix.tex} %\cleardoublepage
+    %\input{./chap/appendix.tex} %\cleardoublepage
 
 
 
     % Bibliography
     \TheBibliography
-
     % BIBTEX
     % use if you want citations to appear even if they are not referenced to: 
     % \nocite{*} or maybe \nocite{Kon64,And59} for specific entries
@@ -139,7 +141,8 @@
     \bibliography{lit.bib}
 
     % THEBIBLIOGRAPHY
-    %\begin{thebibliography}{000}
+    \begin{thebibliography}{000}
     %    \bibitem{ident}Entry into Bibliography.
-    %\end{thebibliography}
+    \bibitem{} Vorbereitungsmappe Pendel
+    \end{thebibliography}
 \end{document}
