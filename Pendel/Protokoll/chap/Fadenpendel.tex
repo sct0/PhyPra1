@@ -1,6 +1,6 @@
 \section{Aufbau}
 
-Der Aufbau besteht aus einem dünnen, von der Decke hängenden Stahlseil, an dessen Ende eine Metallkugel befestigt ist. Die Messung wird erneut mit Hilfe einer Lichtschranke duchgeführt.
+Der Aufbau besteht aus einem dünnen, von der Decke hängenden Stahlseil, an dessen Ende eine Metallkugel befestigt ist. An der Wand hinter dem Pendel befindet sich eine Winkelskala. Die Messungen werden erneut mit Hilfe einer Lichtschranke duchgeführt.
 
 \section{Bestimmung der Fallbeschleunigung}
 
@@ -23,8 +23,6 @@ Da man die Kugel als Kugelkreisel ansehen kann, ergibt sich vereinfacht
 	\theta = \theta_\text{Kugel} + \theta_\text{Steiner} = \frac{2}{5} m r^2 + m d^2 .
 \end{align}
 
-Da das Pendel für diesen Versuch um kleinen Winkel von ca. 5° augelenkt wurde, wird auf die Kleinwinkelannäherung des physikalischen Pendels zurückgegriffen:
-
 Nach einsetzen in \ref{eq:physikalisches-pendel} ergibt sich
 
 \begin{align}
@@ -36,17 +34,15 @@ Die Periodendauer $T$ errechnet sich aus den Messwerten des Versuchs, die Länge
 
 Zuletzt wird der Radius der Kugel benötigt. Um diesen zu ermitteln, wurde der Durchmesser $D$ der Kugel dreimal mit einem Messschieber gemessen und über die Werte gemittelt.
 
-\section{Auswertung}
+\section{Durchführung und Auswertung}
+
+Während dem Versuch wurde das Pendel 10 mal um einen kleinen Winkel von ca. 5° augelenkt und jeweils die Zeit gemessen, bis die vorgegebene Zahl an Perioden durchlaufen wurde.
+
+[hier kommt eine Tabelle hin]
 
 Die Berechnung der Periodendauer wird durch Regression ausgeführt.
 
-\begin{figure}[h!]
-    \centering
-    \includegraphics[scale=0.5]{./Pendel/Protokoll/fig/Fadenpendel_Regression.pdf
-    }
-    \caption{Regression der Messwerte}
-    \label{fig:Venturi}
-\end{figure}
+
 
 Aus der Regression ergibt sich für $T$ ein Wert von $3.079s$, mit einer statistischen Fehlerbehaftung von $0,000018s$.
 
@@ -66,6 +62,34 @@ $g = 9,8075\frac{m}{s^2}$
 
 Zur Fehlerrechnung wird Gaußsche Fehlerfortpflanzung verwendet. Dies ist möglich, da man aufgrund der ungenauen Messmethode den Zusammenhang von r und d vernachlässigen kann und somit alle Fehler unkorreliert sind.
 
-
-
 \section{Abhängigkeit der Schwingungsdauer von der Schwingungsweite}
+
+Im zweiten Teil des Versuches wird die Beziehung zwischen der Schwingungsdauer und dem Auslenkungswinkel des Pendels untersucht.
+Dazu wurde die Periodendauer jeweils für Winkel von 5° bis 60° in fünfer Schritten gemessen,
+wobei für jede Messung 5 Perioden durchlaufen wurden.
+Das Einstellen der Auslenkung des Pendels war durch die Natur des Versuchsaufbaus nicht genau möglich.
+Um zumindest grobe Fehler zu vermeiden, wurde das Pendel von einer Person unter der Anleitung einer zweiten, weiter entfernten Person, ausgelenkt.
+
+\section{Mathematische Grundlagen}
+
+Die gemessenen Daten sollen mit einer Vorhersage verglichen werden.
+Diesmal wird die Vorhersage mit dem Modell des mathematischen Pendels modelliert:
+
+\begin{align}
+	\ddot{\phi}(t) + \frac{g}{l} \cdot \sin ( \phi (t)) = 0
+\end{align}
+
+Analytisch ist diese Differenzialgleichung nicht lösbar, mit Hilfe der Taylorentwicklung kann man sie jedoch genügend annähern:
+
+\begin{align}
+	T(\phi) & = T_0 \sum_{n=0}^{\infty} \left( \frac{\left(2n\right)!}{\left(2^{n}n!\right)^2} \right)^2 \sin^{2n} \left(\phi /2\right) \\
+& = T_0\cdot\left(1+\left(\frac{1}{2}\right)^2 \cdot \sin^2\left(\frac{\phi}{2}\right)+\left(\frac{1\cdot 3}{2\cdot 4}\right)^2 \cdot \sin^4\left(\frac{\phi}{2}\right) + \dots\right)
+\end{align}
+
+$T_0$ ist die Periodendauer für kleine Winkel, die aus dem ersten Versuchsteil übernommen werden kann.
+
+\section{Auswertung}
+
+Die Messung und die Vorhersage werden nun zum visuellen Vergleich gemeinsam geplottet.
+
+[PLOT]
