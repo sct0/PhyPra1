@@ -28,6 +28,37 @@ Dazu werden zunächst der Dreh- und Massenpunkt festgelegt und dann die Perioden
     \end{center}
 \end{table}
 
+\begin{figure}[h!]
+    \centering
+    \includegraphics[scale=0.4]{./Pendel/Protokoll/fig/Koppelpendel_Regression1.pdf}
+    \caption{Plot der Messpunkte und der Regression für das linke Pendel}
+    \label{fig:Reg_links}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[scale=0.4]{./Pendel/Protokoll/fig/Koppelpendel_Regression2.pdf}
+    \caption{Plot der Messpunkte und der Regression für das rechte Pendel}
+    \label{fig:Reg_rechts}
+\end{figure}
+
+\begin{table}[H]
+    \begin{center}
+        \caption{Parameter lineare Regression}
+        \begin{tabular}{ccc}
+            \hline
+            Pendel             & $m$ in $\SI{}{s}$ & $c$ in $\SI{}{s}$ \\
+            \hline
+            links              & $\SI{1,66(2)}{}$ & $\SI{0,8(130)}{}$ \\
+            rechts             & $\SI{1,71(21)}{}$ & $\SI{0,45(135)}{}$  \\
+            \hline
+            Mittelwert         & $\SI{1.69(21)}{}$ & $\SI{0,063(132)}{}$ \\
+            \hline
+            \label{tab:Schwingungen-einzeln-Regression}
+        \end{tabular}
+    \end{center}
+\end{table}
+
 \section{Fundamentalschwingung}
 
 Zur Analyse der Fundamentalschwingung werden die Pendel nun mit einer geeigneten Feder verbunden und die Periodendauer von Hand per Stoppuhr gemessen.
@@ -38,9 +69,43 @@ Es wurde für zwei Koppellängen gemessen, wobei "Koppellänge" den Abstand ziws
 
 Die Auswertung geschieht erneut über Regression.
 
-[PLOT]
-[PLOT]
-[TABELLE]
+\begin{table}[H]
+    \begin{center}
+        \caption{Schwingungsdauern in $\SI{}{s}$}
+        \begin{tabular}{cccc}
+            \hline
+            Koppellänge in $\SI{}{cm}$ & Periodenanzahl & gleichphasig   & gegenphasig    \\
+            \hline
+            \multirow{4}{*}{31}        & 3              & $\SI{5,37}{}$  & $\SI{4,70}{}$  \\
+                                       & 5              & $\SI{8,79}{}$  & $\SI{7,90}{}$  \\
+                                       & 7              & $\SI{12,29}{}$ & $\SI{10,83}{}$ \\
+                                       & 9              & $\SI{15,9}{}$ & $\SI{14,03}{}$ \\
+            \hline
+            \multirow{4}{*}{28}        & 3              & $\SI{5,40}{}$  & $\SI{4,82}{}$  \\
+                                       & 5              & $\SI{8,85}{}$  & $\SI{8,00}{}$  \\
+                                       & 7              & $\SI{12,27}{}$ & $\SI{11,02}{}$ \\
+                                       & 9              & $\SI{15,96}{}$ & $\SI{14,11}{}$ \\
+            \hline
+            \label{tab:Koppellaenge-Messwerte}
+        \end{tabular}
+    \end{center}
+\end{table}
+
+\begin{figure}[tb]{}
+    \begin{center}
+        \includegraphics[scale = 0.4]{./Pendel/Protokoll/fig/Koppelpendel_Regression3.pdf}
+        \caption{Regression der Schwingungsdauern der gekoppelten Oszillatoren,  Kopplungslänge 31cm}
+        \label{fig:Schwingungsdauern-gekoppelte-Oszillatoren1}
+    \end{center}
+\end{figure}
+
+\begin{figure}[tb]{}
+    \begin{center}
+        \includegraphics[scale=0.4]{./Pendel/Protokoll/fig/Koppelpendel_Regression4.pdf}
+        \caption{Regression der Schwingungsdauern der gekoppelten Oszillatoren, Kopplungslänge 28cm}
+        \label{fig:Schwingungsdauern-gekoppelte-Oszillatoren2}
+    \end{center}
+\end{figure}
 
 Andersweitige Bestimmung der Federkonstante
 
