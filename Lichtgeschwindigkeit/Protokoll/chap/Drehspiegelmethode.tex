@@ -146,6 +146,13 @@ Wie man erkennen kann, ist die statistische Abweichung größer als die Abweichu
 
 \subsection{Systematischer Fehler}
 
+Mögliche Fehlerquellen sind zum Beispiel:
+\begin{itemize}
+    \item Skala zum Ablesen der Laserpunktposition
+    \item Bestimmung der Positionen der Spiegel und anderer Objekte
+    \item Frequenzbestimmung des Drehspiegels
+\end{itemize}
+
 Zur Berechnung des systematischen Fehlers wird die Formel für die Größtfehlerabschätzung verwendet. Für die Lichtgeschwindigkeit gilt nach Gleichung \ref{Drehspiegelmethode Formel Drehzahl}:
 
 \begin{equation}
@@ -159,5 +166,19 @@ Damit ergibt sich für die Größtfehlerabschätzung:
     \frac{\partial c}{\partial d_1} \Bigl| \Delta_{d_1} + \Bigl| \frac{\partial
     c}{\partial d_2} \Bigl| \Delta_{d_2} + \Bigl| \frac{\partial c}{\partial d_3}
     \Bigl| \Delta_{d_3} + \Bigl| \frac{\partial c}{\partial a} \Bigl| \Delta_a \\
-    \Delta_c &=
+    \Delta_c &= 8 \pi d_1 \frac{d_2 + d_3}{60a}\Delta U + 8 \pi U \frac{d_2 + d_3}{60a}\Delta d_1 + 8 \pi U d_1 \frac{1}{60a} \Delta d_2 + 8 \pi U d_1 \frac{1}{60a} \Delta d_3 + 8 \pi U d_1 \frac{d_2 + d_3 }{60a^2} \Delta a \\
+    \Delta_c &= \SI{4030775.874}{\metre\per\second}
 \end{align}
+
+\subsection{Messergebnis}
+
+Mithilfe der berechneten Werte, kann man nun das Messergebnis angeben:
+
+\begin{align}
+    c_{ges} &= c \pm \sigma_c \pm \Delta_c \\
+    c_{ges} &= \SI{287940287.054}{\metre\per\second} \pm \SI{7706226}{\metre\per\second} \pm  \SI{4030775.874}{\metre\per\second}\\
+    c_{ges} &= \SI{287940287.054 \pm 11737001.87}{\metre\per\second} \\
+     c_{ges} &= \SI{287940287.054}{\metre\per\second} \pm 4.07 \%
+\end{align}
+
+Der Literaturwert beläuft sich auf $c_0 = 2.998 \cdot 10^8 \, \frac{m}{s}$, somit liegt der Literaturwert innerhalb unserer Fehlergrenzen.
