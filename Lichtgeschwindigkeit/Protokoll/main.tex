@@ -30,14 +30,14 @@
 \newcommand{\nachnameb}{Schwartz}           % Nachname des zweiten Praktikanten
 \newcommand{\vornameb}{Arne}              % Vorname des zweiten Praktikanten
 
-\newcommand{\emailadressen}{latexvorlage@fachschaft.physik.kit.edu}
+\newcommand{\emailadressen}{uhreq@student.kit.edu, ukjfu@student.kit.ed}
 % optionale Angabe von Emailadresse(n) für den Kontakt mit dem Betreuer
 
 \newcommand{\versuch}{Lichtgeschwindigkeit} % Name des Versuchs
 \newcommand{\versuchsnr}{80}               % bitte die korrekte Nummer dem 
                                            % Arbeitsplatz am Versuchstag 
                                            % entnehmen
-\newcommand{\fehlerrechnung}{Nein}         % Ob Fehlerrechnung im Versuch 
+\newcommand{\fehlerrechnung}{Ja}         % Ob Fehlerrechnung im Versuch 
                                            % durchgeführt wurde oder nicht
 
 \newcommand{\betreuer}{Adrian Kriewitz}      % Name des zuständigen Betreuers
@@ -111,21 +111,27 @@
 
     % Contents
     \MainMatter
+    \chapter{Drehspiegelmethode}
+    \input{./chap/Drehspiegelmethode.tex}
+    \chapter{Phasenvergleichsmethode}
+    \input{./chap/Phasenvergleichsmethode.tex}
+    \chapter{Brechzahlbestimmung mit modernem Laserentfernungsmesser}
+    \input{./chap/Brechzahlbestimmung mit modernem Laserentfernungsmesser.tex}
     
-    \emptychapter[1]{Messprotokoll 1}{} % usage: \emptychapter[page displayed 
+    %\emptychapter[1]{Messprotokoll 1}{} % usage: \emptychapter[page displayed 
                                         %        in toc]{name of the chapter}
-    \pseudochapter[3]{Messprotokoll 2}  % usage: \pseudochapter[number of pages 
+    %\pseudochapter[3]{Messprotokoll 2}  % usage: \pseudochapter[number of pages 
                                         %        added]{name of the chapter}
     
-    \chapter{Auswertung}
-    \input{./chap/chapter1.tex} %\cleardoublepage
+    %\chapter{Auswertung}
+    %\input{./chap/chapter1.tex} %\cleardoublepage
 
     % appendix for more or less interesting calculations
-    \Appendix
-    \chapter*{\appendixname} \addcontentsline{toc}{chapter}{\appendixname}
+    %\Appendix
+    %\chapter*{\appendixname} \addcontentsline{toc}{chapter}{\appendixname}
     % to make the appendix appear in ToC without number. \appendixname = 
     % Appendix or Anhang (depending on chosen language)
-    \input{./chap/appendix.tex} %\cleardoublepage
+    %\input{./chap/appendix.tex} %\cleardoublepage
 
 
 
@@ -136,11 +142,12 @@
     % use if you want citations to appear even if they are not referenced to: 
     % \nocite{*} or maybe \nocite{Kon64,And59} for specific entries
     %\nocite{*}
-    \bibliographystyle{babalpha}
-    \bibliography{lit.bib}
+    %\bibliographystyle{babalpha}
+    %\bibliography{lit.bib}
 
     % THEBIBLIOGRAPHY
-    %\begin{thebibliography}{000}
-    %    \bibitem{ident}Entry into Bibliography.
-    %\end{thebibliography}
+    \begin{thebibliography}{000}
+       \bibitem{1} Vorbereitungsmappe Lichtgeschwindigkeit
+       \bibitem{2} Vorbereitungsmappe Geometrische Optik
+    \end{thebibliography}
 \end{document}
