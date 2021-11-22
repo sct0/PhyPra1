@@ -31,7 +31,7 @@ Nach der Grundgleichung für Drehbewegungen gilt:
     M = I \cdot \ddot{\varphi}
 \end{equation}
 
-wobei $M$ das rücktreibende Drehmoment, $I$ das Trägheitsmoment des Pendels und $\ddot{\varphi}$ die Winkelbeschleunigung ist. Für das rücktreibende Drehmoment gilt: $M = -m \cdot g \cdot s \cdot \sin{\varphi}$ mit der Kleinwinkelnäherung $\sin{\varphi}$ folgt nach Einsetzen in Gleichung \ref{Grundgleichung Drehbewegung}:
+wobei $M$ das rücktreibende Drehmoment, $I$ das Trägheitsmoment des Pendels und $\ddot{\varphi}$ die Winkelbeschleunigung ist. Für das rücktreibende Drehmoment gilt: $M = -m \cdot g \cdot s \cdot \sin{\varphi}$, wobei $m$, die Masse des Pendels, $g$ die Erdbeschleunigung und $s$ die Pendellänge ist. Mit der Kleinwinkelnäherung $\sin{\varphi}$ folgt nach Einsetzen in Gleichung \ref{Grundgleichung Drehbewegung}:
 
 \begin{equation} \label{Schwingungsgleichung eines physikalischen Pendels}
 \ddot{\varphi} + \omega^2\varphi = 0
@@ -44,7 +44,7 @@ Mit dem Ergebnis für die Kreisfrequenz $\omega$ lässt sich nun die Persiodenda
     T = \frac{2\pi}{\omega} = 2 \pi \sqrt{\frac{I}{mgs}}
 \end{equation}
 
-Das Trägheitsmoment eines Zylinders mit einer homogenen Masseverteilung ist gegeben durch $I_Z = \frac{1}{3} ml^2$. Der Schwerpunkt des Zylinders liegt bei $s = l/2$. Daraus folgt für die Periodendauer des physikalischen Pendels:
+Das Trägheitsmoment eines Zylinders mit einer homogenen Masseverteilung ist gegeben durch $I_Z = \frac{1}{3} ml^2$. Der Abstand zwischen Schwerpunkt und Drehpunkt des Zylinders ist$s = l/2$. Daraus folgt für die Periodendauer des physikalischen Pendels:
 
 \begin{equation}
     T = 2 \pi \sqrt{\frac{I}{mgs}} = 2 \pi \sqrt{\frac{\frac{1}{3} l^2}{mg\frac{l}{2}}} = 2 \pi \sqrt{\frac{2l}{3g}}
@@ -64,7 +64,7 @@ Weiter soll vorbereitend gezeigt werden, dass eine zusätzlich angebrauchte Mass
     T^\prime = 2 \pi \sqrt{\frac{I + I^\prime}{mgs+m^\prime g s^\prime }} = 2\pi \sqrt{ \frac{ (\frac{m}{2} + \frac{2}{3} m^\prime) \frac{2}{3}l^2} { (\frac{m}{2} + \frac{2}{3}m^\prime)g l  }} \equiv T
 \end{equation}
 
-Mit dieser Erkenntnis lässt sich argumentieren, dass die Klauen, an denen das Pendel aufgehängt wird, eine zu vernachlässigende Änderung der Periodendauer mit sich bringen.
+Mit dieser Erkenntnis lässt sich argumentieren, dass die Klauen, an denen das Pendel aufgehängt wird, keine Änderung der Periodendauer mit sich bringen.
 
 \section{Bestimmung der Fallbeschleunigung g mit Hilfe des Reversionspendels}
 
@@ -91,7 +91,16 @@ Damit erhalten wir nach einsetzen in die Gleichung \ref{Fallbeschleunigung mathe
 
 $$ g = l_r \frac{4 \pi}{T^2} \approx 9.823 $$
 
-Der Literaturwert für die Fallbeschleunigung beträgt $g=9.81 \frac{m}{s^2}$, unsere Abweichung beträgt demnach nur ungefähr $0.1 \% $
+Der Literaturwert für die Fallbeschleunigung beträgt $g=9.81 \frac{m}{s^2}$, unsere Abweichung beträgt demnach nur ungefähr $0.1 \% $\\
+Mögliche Fehlerquellen für die Abweichung sind:
+\begin{itemize}
+    \item Luftreibung
+    \item Reibung der Aufhängung
+    \item Ein zu groß gewählter Auslenkwinkel (Kleinwinkelnäherung gilt nicht mehr)
+    \item Nicht gut geeichte Lichtschranke
+    \item Beim Loslassen des Pendels eine Anfangsgeschwindigkeit übertragen, die das Ergebnis verfälscht
+    \item Zufällige Streuung der Messwerte aufgrund der Ungenauigkeit der Lichtschranke ($\Rightarrow$ mehr Messwerte)
+\end{itemize}
 
 \begin{figure}[ht]
     \centering
