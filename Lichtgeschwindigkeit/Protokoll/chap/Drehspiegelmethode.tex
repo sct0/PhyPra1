@@ -1,6 +1,6 @@
 \section{Vorbereitung auf den Versuch}
 
-In diesem Versuch geht es darum, die Größe der Lichtgeschwindigkeit mithilfe der Drehspiegelmethode zu bestimmen (Abb. \ref{fig:Drehspiegelmethode}). Dafür wird ein Laserstrahl über einen Strahlenteiler geschickt, wobei dieser dahinter auf einen Drehspiegel trifft, der sich mit regulierbarer Frequenz dreht. Der Strahl durchquert eine Linse und trifft, nach einer weiteren Umlenken durch einen Spiegel, senkrecht auf einen Endspiegel. Der Strahlengang kehrt sich nun um, wobei sich der Drehspiegel in der Zwischenzeit um einen Winkel $\delta$ weitergedreht hat. Vom Strahlteiler wird dieser nun auf den Schirm geschickt.\\
+In diesem Versuch geht es darum, die Größe der Lichtgeschwindigkeit mithilfe der Drehspiegelmethode zu bestimmen (Abb. \ref{fig:Drehspiegelmethode}). Dafür wird ein Laserstrahl über einen Strahlenteiler geschickt, wobei dieser dahinter auf einen Drehspiegel trifft, der sich mit einer regulierbaren Frequenz dreht. Der Strahl durchquert eine Linse und trifft, nach einer weiteren Umlenken durch einen Spiegel, senkrecht auf einen Endspiegel. Der Strahlengang kehrt sich nun um, wobei sich der Drehspiegel in der Zwischenzeit um einen Winkel $\delta$ weitergedreht hat. Vom Strahlteiler wird dieser nun auf den Schirm geschickt, wo die Ablenkung gemessen werden kann.\\
 
 \begin{figure}
     \centering
@@ -31,7 +31,7 @@ Da der Versuch schon aufgebaut wurde, sind einige Werte, die für die Auswertung
     Fehler auf alle gegebenen Werte \SI{0.03}{\metre}.
 \end{table}
 
-Vorbereitend sollen nun die Positionen von Linse und Laseraustrittsöffnung berechnet werden. In diesem Versuchsaufbau wird eine Linse verwendet, damit der Strahl sowohl auf dem Dreh- als auch auf dem Enspiegel gebündelt wird und man somit ein scharfes Bild bekommt. Damit dies der Fall ist, muss der Abstand zwischen Drehspiegel und Linse gerade der Brennweite entsprechen. Um nun kann man sich die Gesetze der geometrischen Optik zu nutze machen \cite{2}. Man erhält durch Anwendung der Linsenleichung: 
+Vorbereitend sollen nun die Positionen von Linse und Laseraustrittsöffnung berechnet werden. In diesem Versuchsaufbau wird eine Linse verwendet, damit der Strahl sowohl auf dem Dreh- als auch auf dem Enspiegel gebündelt wird und man somit ein scharfes Bild bekommt, was in diesem Fall der Lichtpunkt des Lasers ist. Damit dies der Fall ist, muss der Abstand zwischen Drehspiegel und Linse gerade der Brennweite entsprechen. Um nun $d_1$ zu erhalten, kann man sich die Gesetze der geometrischen Optik zu nutze machen \cite{2}. Man erhält durch Anwendung der Linsenleichung: 
 
 \begin{equation}
     \frac{1}{f} = \frac{1}{b} + \frac{1}{g} = \frac{1}{d_1 + f} + \frac{1}{d_2 - f + d_3}
@@ -52,7 +52,7 @@ Der Abstand a ist abhängig vom Winkel $\delta$, um den sich der Drehspiegel dre
     a = d_1 \tan{2\delta} \approx 2\delta d_1
 \end{equation}
 
-Man erhält nun weiter für die Zeitdifferenz $\Delta t$, die der Laserstrahl braucht:
+Man erhält nun weiter für die Zeitdifferenz $\Delta t$, die der Laserstrahl benötigt:
 
 \begin{equation}
     \Delta t = \frac{\delta}{\omega} = \frac{\delta}{2\pi f} \stackrel{(\ref{a})}{=} \frac{a}{4\pi f d_1}
@@ -64,10 +64,10 @@ Und für die Streckendifferenz $\Delta s$:
     \Delta s = 2(d_2 + d_1)
 \end{equation}
 
-Der Wert für die Lichtgeschwindigkeit ergibt sich nun aus der Differenz von $\Delta s$ und $\Delta t$:
+Der Wert für die Lichtgeschwindigkeit ergibt sich nun aus dem Quotient von $\Delta s$ und $\Delta t$:
 
 \begin{equation} \label{Drehspiegelmethode Formel}
-    c = \frac{\Delta s}{\delta t} = \frac{8\pi f d_1 ( d_2 + d_3)}{a}
+    c = \frac{\Delta s}{\Delta t} = \frac{8\pi f d_1 ( d_2 + d_3)}{a}
     \Rightarrow a = \frac{8 \pi f d_1 (d_2 + d_3)}{c}
 \end{equation}
 
@@ -112,7 +112,7 @@ Die Formel \ref{Drehspiegelmethode Formel} lässt sich so umschreiben, dass man 
     a = \frac{8 \pi  d_1 (d_2 + d_3)}{60c} U
 \end{equation}
 
-Mit dieser Formel und den Messdaten aus Tabelle \ref{tab:Messwerte Drehspiegelmethode} wird nun eine lineare Regression durchgeführt (Abb. \ref{fig:Drehspiegelmethode Anpassung} )
+Mit dieser Formel und den Messdaten aus Tabelle \ref{tab:Messwerte Drehspiegelmethode} wird nun eine lineare Regression durchgeführt (Abb. \ref{fig:Drehspiegelmethode Anpassung}).
 
 Für die Steigung ergibt sich somit: 
 \begin{equation} \label{Steigung Drehspiegelmethode}
@@ -136,13 +136,13 @@ Durch Umformung der Gleichung \ref{Drehspiegelmethode Formel Drehzahl} und einse
 
 \subsection{Statistischer Fehler}
 
-Den statistischen Fehler entnehmen wir dem Plot. Somit erhält man einen von Kafe2 bestimmten Fehler auf die Steigung von $\pm 200 \, \frac{1}{mm \cdot s}$. Den statistischen Fehler auf die berechnete Lichtgeschwindigkeit erhält man nun durch die Gaußsche Fehlerfortpflanzung:
+Den statistischen Fehler entnehmen wir dem Plot (Abb. \ref{fig:Drehspiegelmethode Anpassung}). Somit erhält man einen von Kafe2 bestimmten Fehler auf die Steigung von $\pm 200 \, \frac{1}{mm \cdot s}$. Den statistischen Fehler auf die berechnete Lichtgeschwindigkeit erhält man nun durch die Gaußsche Fehlerfortpflanzung:
 
 \begin{equation}
     \sigma_{c_{stat}} = \sqrt{(\frac{\partial c }{\partial m})^2 \sigma_m^2} = \sqrt{( \frac{8 \pi d_1 (d_2+d_2)}{60})^2 \sigma_m^2} \approx \SI{7706226}{\metre\per\second}
 \end{equation}
 
-Wie man erkennen kann, ist die statistische Abweichung größer als die Abweichung zum Literaturwert. Also müssen auch die systematischen eine signifikante Rollte spielen. 
+Wie man erkennen kann, ist die statistische Abweichung kleiner als die Abweichung zum Literaturwert. Also müssen auch die systematischen Fehler eine signifikante Rollte spielen. 
 
 \subsection{Systematischer Fehler}
 
@@ -159,7 +159,7 @@ Zur Berechnung des systematischen Fehlers wird die Formel für die Größtfehler
     c = \frac{8 \pi  d_1 (d_2 + d_3)}{60a} U
 \end{equation}
 
-Damit ergibt sich für die Größtfehlerabschätzung:
+Damit ergibt sich für die Größtfehlerabschätzung, mit der Fehlerabschätzung in Tabelle \ref{tab:Größtfehlerabschätzung}:
 
 \begin{align}
     \Delta_c &= \Bigl| \frac{\partial c}{\partial U} \Bigl| \Delta_U + \Bigl|
@@ -169,6 +169,25 @@ Damit ergibt sich für die Größtfehlerabschätzung:
     \Delta_c &= 8 \pi d_1 \frac{d_2 + d_3}{60a}\Delta U + 8 \pi U \frac{d_2 + d_3}{60a}\Delta d_1 + 8 \pi U d_1 \frac{1}{60a} \Delta d_2 + 8 \pi U d_1 \frac{1}{60a} \Delta d_3 + 8 \pi U d_1 \frac{d_2 + d_3 }{60a^2} \Delta a \\
     \Delta_c &= \SI{4030775.874}{\metre\per\second}
 \end{align}
+
+\begin{table}[ht]
+    \centering
+    \caption{Größtfehlerabschätzung für die Messwerte}
+    \begin{tabular}{c c}
+    \hline
+    Messwert & Fehler $\Delta$\\
+    \hline
+    $d_1$ & \SI{0.03}{\metre} \\
+    $d_2$ & \SI{0.03}{\metre} \\
+    $d_3$ & \SI{0.03}{\metre} \\
+    $U$ & $80 \,  \frac{1}{s} $\\
+    $a$ & \SI{0.5}{\milli\metre} \\
+    \hline
+    \end{tabular}
+    \label{tab:Größtfehlerabschätzung}
+\end{table}
+
+ Fehler für $d_1,d_2,d_3$ sind vorgegeben, Fehler auf $U$ enspricht 0.1\% des Mittelwerts der Drehzahl (Geräteangabe), Fehler auf $a$ enspricht halber Skalenweite.
 
 \subsection{Messergebnis}
 
@@ -182,4 +201,4 @@ Mithilfe der berechneten Werte, kann man nun das Messergebnis angeben:
 \end{align}
 
 Der Literaturwert beläuft sich auf $c_0 = 2.998 \cdot 10^8 \, \frac{m}{s}$, somit liegt der Literaturwert innerhalb unserer Fehlergrenzen.
-Ein zufriedenstellendes Ergebnis
+Ein zufriedenstellendes Ergebnis, wenn man die Schwankungen vom Drehzahlmessgerät und die Schwierigkeiten bei der Ablesung der Ablenkung in Betracht zieht.
