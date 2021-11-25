@@ -1,0 +1,204 @@
+\section{Aufbau und Durchführung}
+
+Bei dieser Versuchsreihe wird die Lichtgeschwindigkeit über die Zeitdifferenz zwischen dem Senden und dem Empfangen von Lichtimpulsen errechnet.
+Die gemessen wird die Zeitdifferenz in Abgängigkeit von der Entfernung zwischen Sender und Empfänger.
+Der Aufbau besteht aus einer Metallschiene, auf der eine horizontal verschiebbare, rote LED Lampe angebracht ist.
+An einem Ende der Schiene steht ein Oszilloskop mit einem Lichtempfänger, auf den die LED gerichtet ist.
+Das Oszilloskop ist an einen Computer angeschlossen, die Messung des Phasenversatzes geschieht dann via Software.
+Zusätzlich ist an dem Halter der LED ein Lasermessgerät angebracht, an dem der Abstand zwischen Lampe und Oszilloskop abgelesen wird.
+
+Bei der Durchführung wurde die LED in verschiedene Abstände zum Oszilloskop geschoben und dann in der Software die zeitliche Verschiebung zwischen Sender (LED) und Lichtempfänger bestimmt.
+Der Versuch wurde mit drei verschiedenen Medien zwischen LED und Oszilloskop durchgeführt: Luft, Wasser und Plexiglasstangen in zwei signifikant verschiedenen Längen
+
+Aufgrund der technischen Einschränkungen des Oszilloskopes ist für diesen Versuch noch der Vergrößerungfaktor der Zeit zu berücksichtigen.
+Dieser ergibt sich aus den in der Aufgabenstellungen angebenen Werten von $\omega = 2 \cdot \pi \cdot \SI{60}{MHz}$ und $\Omega = 2 \cdot \pi \cdot \SI{59,9}{MHz}$ zu:
+
+\begin{equation}
+    V = \frac{\omega}{\omega - \Omega} = \frac{\SI{60}{MHz}}{\SI{100}{KHz}} = \SI{600}{}
+\end{equation}
+
+\section{Justierung und Eichung}
+
+Die Justierung und Eichung des Versuchsaufbaus wurde im Rahmen des Versuches nach Vorgabe des Betreuers nicht durchgeführt.
+
+\section{Messung der Lichtgeschwindigkeit in Luft}
+
+Der Versuch wird zunächst ohne spezielles Medium, einfach nur in Luft durchgeführt.
+
+Es ergeben sich folgende Messwerte:
+
+\begin{table}[h!]
+    \begin{center}
+        \caption{Messungen der Phasenverschiebung für verschiedene Abstände in Luft}
+        \begin{tabular}{cc}
+            \hline
+            Abstand in $\SI{}{cm}$ & Zeitdifferenz in $\SI{}{\mu s}$ \\
+            \hline
+            $\SI{260,1}{}$    & $\SI{4,831}{}$ \\
+            $\SI{239,3}{}$    & $\SI{4,399}{}$ \\
+            $\SI{220,6}{}$    & $\SI{4,008}{}$ \\
+            $\SI{200,7}{}$    & $\SI{3,643}{}$ \\
+            $\SI{181,3}{}$    & $\SI{3,261}{}$ \\
+            $\SI{160,0}{}$    & $\SI{2,837}{}$ \\
+            $\SI{140,5}{}$    & $\SI{2,430}{}$ \\
+            $\SI{119,9}{}$    & $\SI{2,040}{}$ \\
+            $\SI{101,4}{}$    & $\SI{1,682}{}$ \\
+            $\SI{80,8}{}$     & $\SI{1,275}{}$ \\
+            $\SI{61,1}{}$     & $\SI{0,9255}{}$ \\
+            $\SI{40,2}{}$     & $\SI{0,4779}{}$ \\
+            $\SI{20,7}{}$     & $\SI{0,1041}{}$ \\
+            \hline
+            \label{tab:Messwerte-Zeitdiffernz-Abstand}
+        \end{tabular}
+    \end{center}
+\end{table}
+
+Die Messreihe wird 
+
+\section{Bestimmung der Brechzahl in Wasser und Plexiglas}
+
+Bei dieser Messung werden unterschiedliche Medien zwischen Sender und Empfänger gestellt und jeweils eine Messung ohne und mit Medium beim gleichen Abstand betrachtet, wobei die Lichtgeschwindigkeit in Luft hier mit der Lichtgeschwindigkeit im Vakuum gleichgesetzt wird.
+
+Um die Brechzahl zu errechnen, muss man zunächst die Differenz der Zeiten aus den Messungen mit und ohne Material bilden:
+
+\begin{equation}
+    t_o' = \frac{s_l}{c_l}\,.
+\end{equation}
+
+\begin{equation}
+    t_m' = \frac{s_l - s_m}{c_l} + \frac{s_m}{c_m}\,.
+\end{equation}
+
+\begin{equation}
+   => t_m' - t_o' = \frac{s_m}{c_m} - \frac{s_m}{c_l}\,.
+\end{equation}
+
+Nun muss man noch die Vergrößerung berücksichtigen:
+
+\begin{equation}
+    \frac{1}{\SI{600}{} \cdot s_m} \cdot (t_m - t_o) = \frac{1}{c_m} - \frac{1}{c_l}\,.
+\end{equation}
+
+Und erhält nach Umformung:
+
+\begin{equation}
+    n_m = \frac{c_l}{c_m} = \frac{c_l}{c_m} = \frac{(t_m - t_o) \cdot c_l}{\SI{600}{} \cdot s_m} + 1\,.
+\end{equation}
+
+\subsection{Wasser}
+
+\begin{table}[h!]
+    \begin{center}
+        \caption{Messungen der Phasenverschiebung für verschiedene Abstände mit Wasser, 1m}
+        \begin{tabular}{cc}
+            \hline
+            Abstand in $\SI{}{cm}$ & Zeitdifferenz in $\SI{}{\mu s}$ \\
+            \hline
+            $\SI{260,1}{}$    & $\SI{5,562}{}$ \\
+            $\SI{239,5}{}$    & $\SI{5,146}{}$ \\
+            $\SI{219,9}{}$    & $\SI{4,739}{}$ \\
+            $\SI{199,2}{}$    & $\SI{4,324}{}$ \\
+            $\SI{180,6}{}$    & $\SI{3,950}{}$ \\
+            $\SI{160,7}{}$    & $\SI{3,576}{}$ \\
+            $\SI{139,7}{}$    & $\SI{3,136}{}$ \\
+            $\SI{119,8}{}$    & $\SI{2,762}{}$ \\
+            \hline
+            \label{tab:Messwerte-Zeitdiffernz-Abstand-Wasser}
+        \end{tabular}
+    \end{center}
+\end{table}
+
+\begin{table}[H]
+    \begin{center}
+        \caption{Berechnete Brechzahlen für verschiedene Materialien}
+        \begin{tabular}{cccc}
+            \hline
+            Messung            & Plexiglas ($\SI{30}{cm}$) & Plexiglas ($\SI{8}{cm}$)  \\
+            \hline
+            1. Messung         & $\SI{1,515}{}$            & $\SI{1,379}{}$ \\
+            2. Messung         & $\SI{1,488}{}$            & $\SI{1,271}{}$ \\
+            3. Messung         & $\SI{1,529}{}$            & $\SI{1,327}{}$ \\
+            4. Messung         & $\SI{1,515}{}$            & $\SI{1,379}{}$ \\
+            5. Messung         & $\SI{1,488}{}$            & $\SI{1,271}{}$ \\
+            6. Messung         & $\SI{1,529}{}$            & $\SI{1,327}{}$ \\
+            7. Messung         & $\SI{1,515}{}$            & $\SI{1,379}{}$ \\
+            8. Messung         & $\SI{1,488}{}$            & $\SI{1,271}{}$ \\
+            \hline
+            Mittelwert         & $\SI{1,35}{}$        & \multicolumn{2}{c}{\SI{1,41}{}} \\
+            Standardabweichung & $\SI{0,015}{}$       & \multicolumn{2}{c}{\SI{0,09}{}} \\
+            \hline
+            \label{tab:Ergebnisse-Brechzahlen}
+        \end{tabular}
+    \end{center}
+\end{table}
+
+
+\subsection{Plexiglas}
+
+\begin{table}[h!]
+    \begin{center}
+        \caption{Messungen der Phasenverschiebung für verschiedene Abstände mit kurzem Plexiglasstab, 8cm}
+        \begin{tabular}{cc}
+            \hline
+            Abstand in $\SI{}{cm}$ & Zeitdifferenz in $\SI{}{\mu s}$ \\
+            \hline
+            $\SI{159,3}{}$    & $\SI{2,881}{}$ \\
+            $\SI{140,0}{}$    & $\SI{2,508}{}$ \\
+            $\SI{119,9}{}$    & $\SI{2,161}{}$ \\
+            $\SI{100,3}{}$    & $\SI{1,772}{}$ \\
+            $\SI{80,3}{}$     & $\SI{1,374}{}$ \\
+            $\SI{60,6}{}$     & $\SI{9,672}{}$ \\
+            $\SI{40,2}{}$     & $\SI{5,776}{}$ \\
+            $\SI{20,2}{}$     & $\SI{1,872}{}$ \\
+            \hline
+            \label{tab:Messwerte-Zeitdiffernz-Abstand-Plexi-kurz}
+        \end{tabular}
+    \end{center}
+\end{table}
+
+\begin{table}[h!]
+    \begin{center}
+        \caption{Messungen der Phasenverschiebung für verschiedene Abstände mit langem Plexiglas Stab, 30cm}
+        \begin{tabular}{cc}
+            \hline
+            Abstand in $\SI{}{cm}$ & Zeitdifferenz in $\SI{}{\mu s}$ \\
+            \hline
+            $\SI{180,5}{}$    & $\SI{3,55}{}$ \\
+            $\SI{160,4}{}$    & $\SI{3,135}{}$ \\
+            $\SI{139,5}{}$    & $\SI{2,762}{}$ \\
+            $\SI{119,7}{}$    & $\SI{2,348}{}$ \\
+            $\SI{99,2}{}$     & $\SI{1,941}{}$ \\
+            $\SI{80,4}{}$     & $\SI{1,602}{}$ \\
+            $\SI{60,0}{}$     & $\SI{1,196}{}$ \\
+            $\SI{40,8}{}$     & $\SI{0,8063}{}$ \\
+            \hline
+            \label{tab:Messwerte-Zeitdiffernz-Abstand-Plexi-lang}
+        \end{tabular}
+    \end{center}
+\end{table}
+
+\begin{table}[H]
+    \begin{center}
+        \caption{Berechnete Brechzahlen für Plexiglas}
+        \begin{tabular}{cccc}
+            \hline
+            Messung            & Plexiglas ($\SI{8}{cm}$) & Plexiglas ($\SI{30}{cm}$)  \\
+            \hline
+            1. Messung         & $\SI{1,515}{}$            & $\SI{1,379}{}$ \\
+            2. Messung         & $\SI{1,488}{}$            & $\SI{1,271}{}$ \\
+            3. Messung         & $\SI{1,529}{}$            & $\SI{1,327}{}$ \\
+            4. Messung         & $\SI{1,515}{}$            & $\SI{1,379}{}$ \\
+            5. Messung         & $\SI{1,488}{}$            & $\SI{1,271}{}$ \\
+            6. Messung         & $\SI{1,529}{}$            & $\SI{1,327}{}$ \\
+            7. Messung         & $\SI{1,515}{}$            & $\SI{1,379}{}$ \\
+            8. Messung         & $\SI{1,488}{}$            & $\SI{1,271}{}$ \\
+            \hline
+            Mittelwert         & $\SI{1,35}{}$        & \multicolumn{2}{c}{\SI{1,41}{}} \\
+            Standardabweichung & $\SI{0,015}{}$       & \multicolumn{2}{c}{\SI{0,09}{}} \\
+            \hline
+            \label{tab:Ergebnisse-Brechzahlen}
+        \end{tabular}
+    \end{center}
+\end{table}
+
+\section{Bestimmung der Brechzahl mittels Lissajous-Figuren}
