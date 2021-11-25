@@ -23,6 +23,8 @@ Die Justierung und Eichung des Versuchsaufbaus wurde im Rahmen des Versuches nac
 
 \section{Messung der Lichtgeschwindigkeit in Luft}
 
+- Hinweis: Bei den Messwerten der Distanzen sind Nachhinein Ungereimtheiten aufgefallen, daher wurden aus zeitgründen ersatzweise Messwerte vom Betreuer zu Verfügung gestellt, mit denen im Folgenden gehandhabt wird. -
+
 Der Versuch wird zunächst ohne spezielles Medium, einfach nur in Luft durchgeführt.
 
 Es ergeben sich folgende Messwerte:
@@ -53,7 +55,39 @@ Es ergeben sich folgende Messwerte:
     \end{center}
 \end{table}
 
-Die Messreihe wird 
+Die Messreihe wird über lineare Regression ausgewertet:
+
+
+
+Der relevante Wert ist hier die Steigung $m = 1.967110{\frac{m}{\mu s}} \pm 0.003719{\frac{m}{\mu s}}$, dieser wird noch mit dem Vergrößerungsfaktor korrigiert und es ergibt sich:
+
+\begin{equation}
+    c_0  = m = \SI{0,00327}{\frac{m}{\mu s}} \pm 0,0000062{\frac{m}{\mu s}}\,.
+\end{equation}
+
+Dieser Wert weicht erstaunlich stark vom Literaturwert von $\SI{3e8}{\frac{m}{s}}$ ab.
+
+\subsection{Fehlerbetrachtung}
+
+Der statistische Fehler ergibt sich aus der Regression und beträgt $\pm 0,0000062{\frac{m}{\mu s}}$.
+
+Der systematische Fehler setzt sich aus der Fehlerbehaftung der Streckenmessung und der Fehlerbehaftung des abgelesenen Wertes der Phasenverschiebung.
+Da ein Lasermessgerät verwendet wurde, setzen wir den Fehler hier sehr klein bei $\SI{0,00005}{m}$ an.
+
+Den Wert der Phasenverschiebung behaften wir mit $\SI{0,01}{\mu s}$, da der Wert in der Software per Hand- und Augenmaß eingestellt wurde.
+Eine weitere Fehlerquelle ist hier, dass der Lichtstrahl mit zunehmenden Abstand diffuser wird und dadurch das Signal geschwächt wurde.
+
+Der Vergrößerungsfaktor wird unbehaftet belassen, da die zu Grunde liegenden Werte ohne Fehler vorgegeben waren.
+
+Aus diesem Grund würde es sich anbieten, das Wertepaar mit dem kleinsten Abstand zur Fehlerberechnung zu verwenden, allerdings fällt bei kleineren Strecken der Fehler auf dem Abstand mehr ins Gewicht.
+Daher haben wir uns für das mittlere Wertepaar ($\SI{119,9}{}$,$\SI{2,040}{}$) entschieden.
+
+Über Gauß'sche Fehlerfortpflanzung ergibt sich ein Fehler von $\SI{0,0005}{\frac{m}{s}}$.
+
+Mit Fehlern beträgt die errechnete Lichtgeschwindigkeit somit:
+
+$c = \SI{0,00327}{\frac{m}{\mu s}} \pm \SI{0,0000062}{\frac{m}{\mu s}}{\frac{m}{s}} \pm \SI{0,0005}{\frac{mu}{s}}$
+
 
 \section{Bestimmung der Brechzahl in Wasser und Plexiglas}
 
@@ -85,6 +119,8 @@ Und erhält nach Umformung:
     n_m = \frac{c_l}{c_m} = \frac{c_l}{c_m} = \frac{(t_m - t_o) \cdot c_l}{\SI{600}{} \cdot s_m} + 1\,.
 \end{equation}
 
+Für die Lichtgeschwindigkeit in Luft wird jeweils der Literaturwert von $\SI{3e8}{\frac{m}{s}}$ verwendet.
+
 \subsection{Wasser}
 
 \begin{table}[h!]
@@ -108,24 +144,14 @@ Und erhält nach Umformung:
     \end{center}
 \end{table}
 
-\begin{table}[H]
+\begin{table}[h!]
     \begin{center}
         \caption{Berechnete Brechzahlen für verschiedene Materialien}
         \begin{tabular}{cccc}
             \hline
-            Messung            & Plexiglas ($\SI{30}{cm}$) & Plexiglas ($\SI{8}{cm}$)  \\
-            \hline
-            1. Messung         & $\SI{1,515}{}$            & $\SI{1,379}{}$ \\
-            2. Messung         & $\SI{1,488}{}$            & $\SI{1,271}{}$ \\
-            3. Messung         & $\SI{1,529}{}$            & $\SI{1,327}{}$ \\
-            4. Messung         & $\SI{1,515}{}$            & $\SI{1,379}{}$ \\
-            5. Messung         & $\SI{1,488}{}$            & $\SI{1,271}{}$ \\
-            6. Messung         & $\SI{1,529}{}$            & $\SI{1,327}{}$ \\
-            7. Messung         & $\SI{1,515}{}$            & $\SI{1,379}{}$ \\
-            8. Messung         & $\SI{1,488}{}$            & $\SI{1,271}{}$ \\
-            \hline
-            Mittelwert         & $\SI{1,35}{}$        & \multicolumn{2}{c}{\SI{1,41}{}} \\
-            Standardabweichung & $\SI{0,015}{}$       & \multicolumn{2}{c}{\SI{0,09}{}} \\
+            Messung            & Wasser ($\SI{1}{m}$)
+            Mittelwert         & $\SI{3,591}{}$
+            Standardabweichung & $\SI{0,015}{}$
             \hline
             \label{tab:Ergebnisse-Brechzahlen}
         \end{tabular}
@@ -177,23 +203,13 @@ Und erhält nach Umformung:
     \end{center}
 \end{table}
 
-\begin{table}[H]
+\begin{table}[h!]
     \begin{center}
         \caption{Berechnete Brechzahlen für Plexiglas}
         \begin{tabular}{cccc}
             \hline
             Messung            & Plexiglas ($\SI{8}{cm}$) & Plexiglas ($\SI{30}{cm}$)  \\
-            \hline
-            1. Messung         & $\SI{1,515}{}$            & $\SI{1,379}{}$ \\
-            2. Messung         & $\SI{1,488}{}$            & $\SI{1,271}{}$ \\
-            3. Messung         & $\SI{1,529}{}$            & $\SI{1,327}{}$ \\
-            4. Messung         & $\SI{1,515}{}$            & $\SI{1,379}{}$ \\
-            5. Messung         & $\SI{1,488}{}$            & $\SI{1,271}{}$ \\
-            6. Messung         & $\SI{1,529}{}$            & $\SI{1,327}{}$ \\
-            7. Messung         & $\SI{1,515}{}$            & $\SI{1,379}{}$ \\
-            8. Messung         & $\SI{1,488}{}$            & $\SI{1,271}{}$ \\
-            \hline
-            Mittelwert         & $\SI{1,35}{}$        & \multicolumn{2}{c}{\SI{1,41}{}} \\
+            Mittelwert         & $\SI{4,103}{}$        & \multicolumn{2}{c}{\SI{1,507}{}} \\
             Standardabweichung & $\SI{0,015}{}$       & \multicolumn{2}{c}{\SI{0,09}{}} \\
             \hline
             \label{tab:Ergebnisse-Brechzahlen}
@@ -202,3 +218,12 @@ Und erhält nach Umformung:
 \end{table}
 
 \section{Bestimmung der Brechzahl mittels Lissajous-Figuren}
+
+Lissajous-Figuren sind Kurvengraphen, die aus zwei senkrecht zueinander stehenden, harmonischen Schwingungen bestehen. Sie entstehen, wenn man das Oszilloskop im X-Y-Modus betreibt, wobei die Spannung der LED an der X-Achse und die Spannung am Lichtempfänger auf der Y-Achse aufgetragen wird. Wenn man die Phasenverschiebung bei einem festen Abstand nun so einstellt, dass die kreisförmige Lissajous-Figur zu einer Geraden zusammenfällt, lässt sich durch verschieben der LED eine zweite Position finden, an der das passiert.
+Zur Berechnung der Lichtgeschwindkeit mit dieser Methode misst man die Strecke, um die die LED verschoben wurde.
+
+Es ergibt sich mit einer Verschiebung um 2,618m:
+
+\begin{equation}
+    c = 2 \cdot \lambda  \cdot f = 4 \cdot f \cdot \Delta s = 3,9 \cdot 10^8\,.
+\end{equation}
